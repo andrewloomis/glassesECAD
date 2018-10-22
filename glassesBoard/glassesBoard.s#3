@@ -3392,11 +3392,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-243.84" y="-180.34" size="1.778" layer="97">USB Mode ID:
 Low: Host Mode
 High: Device Mode</text>
-<text x="-431.8" y="0" size="1.778" layer="97">Power ON sequence:
-Touch Sensor reads button press,
-sends interrupt low, U6 turns ON.
-ATTiny latches U6 ON before 
-Touch interrupt goes high</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="-30.48" y="-127">
@@ -3964,21 +3959,16 @@ Touch interrupt goes high</text>
 <label x="-370.84" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FUSE_SNS" class="0">
+<net name="N$3" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="U6" gate="G$1" pin="S"/>
 <wire x1="-396.24" y1="-17.78" x2="-411.48" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="R1" gate="A" pin="22"/>
-<wire x1="-411.48" y1="-17.78" x2="-416.56" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-416.56" y1="-17.78" x2="-419.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-411.48" y1="-17.78" x2="-419.1" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-408.94" y1="-27.94" x2="-411.48" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-411.48" y1="-27.94" x2="-411.48" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-411.48" y="-17.78"/>
-<wire x1="-416.56" y1="-17.78" x2="-416.56" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-416.56" y1="-12.7" x2="-403.86" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-416.56" y="-17.78"/>
-<label x="-416.56" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">

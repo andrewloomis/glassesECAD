@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -673,28 +673,6 @@
 <smd name="3" x="1.0245" y="0" dx="1.1801" dy="0.6092" layer="1"/>
 <text x="0" y="2.6436" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="DFN10-3X3" urn="urn:adsk.eagle:footprint:16001/1" locally_modified="yes">
-<description>&lt;b&gt;DD Package 10-Lead Plastic DFN (3mm × 3mm)&lt;/b&gt;&lt;p&gt;
-(Reference LTC DWG # 05-08-1669)&lt;br&gt;
-Source: http://www.linear.com .. 4062fa.pdf</description>
-<wire x1="-1.4" y1="1.4" x2="1.4" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="1.4" x2="1.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="-1.4" x2="-1.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="-1.4" x2="-1.4" y2="1.4" width="0.2032" layer="51"/>
-<circle x="-0.775" y="0.75" radius="0.275" width="0" layer="51"/>
-<smd name="EXP" x="0" y="0" dx="2.38" dy="1.65" layer="1" rot="R270"/>
-<smd name="1" x="-1.6" y="1" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="6" x="1.6" y="-1" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<text x="-1.405" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<smd name="2" x="-1.6" y="0.5" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="3" x="-1.6" y="0" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="4" x="-1.6" y="-0.5" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="5" x="-1.6" y="-1" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="7" x="1.6" y="-0.5" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="8" x="1.6" y="0" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="9" x="1.6" y="0.5" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-<smd name="10" x="1.6" y="1" dx="0.3" dy="0.8" layer="1" roundness="25" rot="R270"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="SOT95P280X110-5" urn="urn:adsk.eagle:package:6091633/1" locally_modified="yes" type="model">
@@ -716,14 +694,6 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.40 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT23-3"/>
-</packageinstances>
-</package3d>
-<package3d name="DFN10-3X3" urn="urn:adsk.eagle:package:16061/1" locally_modified="yes" type="box">
-<description>DD Package 10-Lead Plastic DFN (3mm × 3mm)
-(Reference LTC DWG # 05-08-1669)
-Source: http://www.linear.com .. 4062fa.pdf</description>
-<packageinstances>
-<packageinstance name="DFN10-3X3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1090,24 +1060,6 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <text x="-3.81" y="-5.08" size="3.81" layer="95" rot="R90">&gt;NAME</text>
 <text x="11.43" y="-8.89" size="2.54" layer="95" rot="R90">&gt;VALUE</text>
 </symbol>
-<symbol name="IQS263B">
-<pin name="VDDHI" x="-15.24" y="5.08" length="middle"/>
-<pin name="VREG" x="-15.24" y="2.54" length="middle"/>
-<pin name="CTX" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="CRX1" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="CRX2" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="CRX3" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="RDY" x="12.7" y="-7.62" length="middle" rot="R180"/>
-<pin name="SDA" x="12.7" y="-10.16" length="middle" rot="R180"/>
-<pin name="SCL" x="12.7" y="-12.7" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="12.7" size="3.81" layer="95">&gt;NAME</text>
-<text x="-10.16" y="8.89" size="2.54" layer="95">IQS263B</text>
-<pin name="GND" x="-15.24" y="-10.16" length="middle"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="APDS-9960" prefix="U">
@@ -1471,33 +1423,6 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <technology name="">
 <attribute name="VALUE" value="BAS40-06"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IQS263B" prefix="U">
-<gates>
-<gate name="G$1" symbol="IQS263B" x="2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="DFN10" package="DFN10-3X3">
-<connects>
-<connect gate="G$1" pin="CRX1" pad="2"/>
-<connect gate="G$1" pin="CRX2" pad="3"/>
-<connect gate="G$1" pin="CRX3" pad="9"/>
-<connect gate="G$1" pin="CTX" pad="10"/>
-<connect gate="G$1" pin="GND" pad="1 EXP"/>
-<connect gate="G$1" pin="RDY" pad="6"/>
-<connect gate="G$1" pin="SCL" pad="8"/>
-<connect gate="G$1" pin="SDA" pad="7"/>
-<connect gate="G$1" pin="VDDHI" pad="4"/>
-<connect gate="G$1" pin="VREG" pad="5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16061/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
