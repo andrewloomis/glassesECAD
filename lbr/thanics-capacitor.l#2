@@ -280,21 +280,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="GRM188R61A106KE69D" prefix="C">
+<deviceset name="GRM188R61A106KE69D">
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="C0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
+<device name="">
 <technologies>
-<technology name="">
-<attribute name="RATING" value="10V"/>
-<attribute name="VALUE" value="10uF"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

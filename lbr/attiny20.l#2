@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -307,27 +307,27 @@
 </packages>
 <symbols>
 <symbol name="ATTINY20-MMH">
-<pin name="EPAD" x="-17.78" y="-7.62" length="middle" direction="pas"/>
-<pin name="PB0" x="-17.78" y="7.62" length="middle"/>
-<pin name="PB1" x="-17.78" y="5.08" length="middle"/>
-<pin name="PB2" x="-17.78" y="2.54" length="middle"/>
-<pin name="PB3" x="-17.78" y="0" length="middle"/>
-<pin name="PA0" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="PA1" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="PA2" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="PA3" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="PA4" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="PA5" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="PA6" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="PA7" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.1524" layer="94"/>
-<text x="-12.3444" y="20.5486" size="3.81" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<pin name="GND" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="VCC" x="-17.78" y="12.7" length="middle" direction="pwr"/>
-<text x="-12.3444" y="16.7386" size="2.54" layer="95" ratio="6" rot="SR0">ATTiny20</text>
+<pin name="EPAD" x="2.54" y="-17.78" length="middle" direction="pas"/>
+<pin name="PB0" x="2.54" y="-2.54" length="middle"/>
+<pin name="PB1" x="2.54" y="-5.08" length="middle"/>
+<pin name="PB2" x="2.54" y="-7.62" length="middle"/>
+<pin name="PB3" x="2.54" y="-10.16" length="middle"/>
+<pin name="PA0" x="38.1" y="0" length="middle" rot="R180"/>
+<pin name="PA1" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA2" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA3" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA4" x="38.1" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA5" x="38.1" y="-12.7" length="middle" rot="R180"/>
+<pin name="PA6" x="38.1" y="-15.24" length="middle" rot="R180"/>
+<pin name="PA7" x="38.1" y="-17.78" length="middle" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-22.86" x2="33.02" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-22.86" x2="33.02" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<text x="7.9756" y="10.3886" size="3.81" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<pin name="GND" x="2.54" y="-20.32" length="middle" direction="pwr"/>
+<pin name="VCC" x="2.54" y="2.54" length="middle" direction="pwr"/>
+<text x="7.9756" y="6.5786" size="2.54" layer="95" ratio="6" rot="SR0">ATTiny20</text>
 </symbol>
 <symbol name="ATTINY20-MMH_A">
 <pin name="DNC_2" x="2.54" y="0" length="middle" direction="nc"/>
@@ -351,12 +351,12 @@
 <deviceset name="ATTINY20-MMH" prefix="U">
 <gates>
 <gate name="A" symbol="ATTINY20-MMH" x="0" y="0"/>
+<gate name="B" symbol="ATTINY20-MMH_A" x="54.356" y="0"/>
 </gates>
 <devices>
 <device name="" package="20M2">
 <connects>
 <connect gate="A" pin="EPAD" pad="21"/>
-<connect gate="A" pin="GND" pad="8"/>
 <connect gate="A" pin="PA0" pad="5"/>
 <connect gate="A" pin="PA1" pad="4"/>
 <connect gate="A" pin="PA2" pad="3"/>
@@ -369,7 +369,14 @@
 <connect gate="A" pin="PB1" pad="12"/>
 <connect gate="A" pin="PB2" pad="14"/>
 <connect gate="A" pin="PB3" pad="13"/>
-<connect gate="A" pin="VCC" pad="9"/>
+<connect gate="B" pin="DNC" pad="20"/>
+<connect gate="B" pin="DNC_2" pad="6"/>
+<connect gate="B" pin="DNC_3" pad="7"/>
+<connect gate="B" pin="DNC_4" pad="10"/>
+<connect gate="B" pin="DNC_5" pad="18"/>
+<connect gate="B" pin="DNC_6" pad="19"/>
+<connect gate="B" pin="GND" pad="8"/>
+<connect gate="B" pin="VCC" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -381,7 +388,6 @@
 <device name="20M2-M" package="20M2-M">
 <connects>
 <connect gate="A" pin="EPAD" pad="21"/>
-<connect gate="A" pin="GND" pad="8"/>
 <connect gate="A" pin="PA0" pad="5"/>
 <connect gate="A" pin="PA1" pad="4"/>
 <connect gate="A" pin="PA2" pad="3"/>
@@ -394,7 +400,14 @@
 <connect gate="A" pin="PB1" pad="12"/>
 <connect gate="A" pin="PB2" pad="14"/>
 <connect gate="A" pin="PB3" pad="13"/>
-<connect gate="A" pin="VCC" pad="9"/>
+<connect gate="B" pin="DNC" pad="20"/>
+<connect gate="B" pin="DNC_2" pad="6"/>
+<connect gate="B" pin="DNC_3" pad="7"/>
+<connect gate="B" pin="DNC_4" pad="10"/>
+<connect gate="B" pin="DNC_5" pad="18"/>
+<connect gate="B" pin="DNC_6" pad="19"/>
+<connect gate="B" pin="GND" pad="8"/>
+<connect gate="B" pin="VCC" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -406,7 +419,6 @@
 <device name="20M2-L" package="20M2-L">
 <connects>
 <connect gate="A" pin="EPAD" pad="21"/>
-<connect gate="A" pin="GND" pad="8"/>
 <connect gate="A" pin="PA0" pad="5"/>
 <connect gate="A" pin="PA1" pad="4"/>
 <connect gate="A" pin="PA2" pad="3"/>
@@ -419,7 +431,14 @@
 <connect gate="A" pin="PB1" pad="12"/>
 <connect gate="A" pin="PB2" pad="14"/>
 <connect gate="A" pin="PB3" pad="13"/>
-<connect gate="A" pin="VCC" pad="9"/>
+<connect gate="B" pin="DNC" pad="20"/>
+<connect gate="B" pin="DNC_2" pad="6"/>
+<connect gate="B" pin="DNC_3" pad="7"/>
+<connect gate="B" pin="DNC_4" pad="10"/>
+<connect gate="B" pin="DNC_5" pad="18"/>
+<connect gate="B" pin="DNC_6" pad="19"/>
+<connect gate="B" pin="GND" pad="8"/>
+<connect gate="B" pin="VCC" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
