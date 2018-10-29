@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -854,6 +854,99 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <smd name="J9" x="2" y="-2" dx="0.25" dy="0.25" layer="1" roundness="100" thermals="no"/>
 <text x="0" y="3.185" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="SOP95P275X110-6" urn="urn:adsk.eagle:footprint:6326994/1">
+<description>6-SOP, 0.95 mm pitch, 2.75 mm span, 2.90 X 1.50 X 1.10 mm body
+&lt;p&gt;6-pin SOP package with 0.95 mm pitch, 2.75 mm span with body size 2.90 X 1.50 X 1.10 mm&lt;/p&gt;</description>
+<circle x="-1.354" y="1.7025" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.85" y1="1.4525" x2="-0.85" y2="1.55" width="0.12" layer="21"/>
+<wire x1="-0.85" y1="1.55" x2="0.85" y2="1.55" width="0.12" layer="21"/>
+<wire x1="0.85" y1="1.55" x2="0.85" y2="1.4525" width="0.12" layer="21"/>
+<wire x1="-0.85" y1="-1.4525" x2="-0.85" y2="-1.55" width="0.12" layer="21"/>
+<wire x1="-0.85" y1="-1.55" x2="0.85" y2="-1.55" width="0.12" layer="21"/>
+<wire x1="0.85" y1="-1.55" x2="0.85" y2="-1.4525" width="0.12" layer="21"/>
+<wire x1="0.85" y1="-1.55" x2="-0.85" y2="-1.55" width="0.12" layer="51"/>
+<wire x1="-0.85" y1="-1.55" x2="-0.85" y2="1.55" width="0.12" layer="51"/>
+<wire x1="-0.85" y1="1.55" x2="0.85" y2="1.55" width="0.12" layer="51"/>
+<wire x1="0.85" y1="1.55" x2="0.85" y2="-1.55" width="0.12" layer="51"/>
+<smd name="1" x="-1.2442" y="0.95" dx="1.224" dy="0.4971" layer="1"/>
+<smd name="2" x="-1.2442" y="0" dx="1.224" dy="0.4971" layer="1"/>
+<smd name="3" x="-1.2442" y="-0.95" dx="1.224" dy="0.4971" layer="1"/>
+<smd name="4" x="1.2442" y="-0.95" dx="1.224" dy="0.4971" layer="1"/>
+<smd name="5" x="1.2442" y="0" dx="1.224" dy="0.4971" layer="1"/>
+<smd name="6" x="1.2442" y="0.95" dx="1.224" dy="0.4971" layer="1"/>
+<text x="0" y="2.5875" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.185" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="IND_IFSC_1515AH">
+<smd name="1" x="-1.3589" y="0" dx="2.0066" dy="4.0132" layer="1"/>
+<smd name="2" x="1.3589" y="0" dx="2.0066" dy="4.0132" layer="1"/>
+<wire x1="-3.1242" y1="0" x2="-3.2766" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-3.2766" y1="0" x2="-3.1242" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.3556" y1="-2.0066" x2="-0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="-2.0066" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-2.0066" y1="-2.0066" x2="-0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="-2.0066" x2="2.0066" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="2.0066" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-0.3556" y1="-2.0066" x2="0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="2.0066" y1="-2.0066" x2="2.0066" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="-0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-2.0066" y1="2.0066" x2="-2.0066" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="-1.1684" y1="0" x2="-1.3208" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.3208" y1="0" x2="-1.1684" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="IND_IFSC_1515AH-M">
+<smd name="1" x="-1.4605" y="0" dx="2.2098" dy="4.1148" layer="1"/>
+<smd name="2" x="1.4605" y="0" dx="2.2098" dy="4.1148" layer="1"/>
+<wire x1="-3.3274" y1="0" x2="-3.4798" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-3.4798" y1="0" x2="-3.3274" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.3556" y1="-2.0066" x2="-0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="-2.0066" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-2.0066" y1="-2.0066" x2="-0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="-2.0066" x2="2.0066" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="2.0066" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-0.3556" y1="-2.0066" x2="0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="2.0066" y1="-2.0066" x2="2.0066" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="-0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-2.0066" y1="2.0066" x2="-2.0066" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0" x2="-1.4224" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.4224" y1="0" x2="-1.27" y2="0" width="0" layer="51" curve="-180"/>
+<text x="1.1684" y="2.54" size="0.762" layer="21" ratio="6" rot="SR0">&gt;Name</text>
+<wire x1="-2.794" y1="2.286" x2="-2.794" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="-2.286" x2="2.794" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="2.794" y1="-2.286" x2="2.794" y2="2.286" width="0.127" layer="21"/>
+<wire x1="2.794" y1="2.286" x2="-2.794" y2="2.286" width="0.127" layer="21"/>
+</package>
+<package name="IND_IFSC_1515AH-L">
+<smd name="1" x="-1.2573" y="0" dx="1.8034" dy="4.0132" layer="1"/>
+<smd name="2" x="1.2573" y="0" dx="1.8034" dy="4.0132" layer="1"/>
+<wire x1="-2.921" y1="0" x2="-3.0734" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-3.0734" y1="0" x2="-2.921" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.3556" y1="-2.0066" x2="-0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="-2.0066" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-2.0066" y1="-2.0066" x2="-0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="-2.0066" x2="2.0066" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="2.0066" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-0.3556" y1="-2.0066" x2="0.3556" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="2.0066" y1="-2.0066" x2="2.0066" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="-0.3556" y2="2.0066" width="0.1524" layer="51"/>
+<wire x1="-2.0066" y1="2.0066" x2="-2.0066" y2="-2.0066" width="0.1524" layer="51"/>
+<wire x1="-1.0668" y1="0" x2="-1.2192" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.2192" y1="0" x2="-1.0668" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="1008">
+<smd name="P$1" x="-1" y="0" dx="2" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="1" y="0" dx="2" dy="0.8" layer="1" rot="R90"/>
+<text x="-1" y="1.6" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="-1.8" y1="1.4" x2="-1.8" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-1.4" x2="1.8" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-1.4" x2="1.8" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.8" y1="1.4" x2="-1.8" y2="1.4" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT95P280X110-5" urn="urn:adsk.eagle:package:6091633/1" locally_modified="yes" type="model">
@@ -897,6 +990,13 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 &lt;p&gt;81-pin collapsing BGA package with 0.50 mm col pitch and 0.50 mm row pitch with body size 5.00 X 5.00 X 1.00 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="BGA81C50P9X9_500X500X100"/>
+</packageinstances>
+</package3d>
+<package3d name="SOP95P275X110-6" urn="urn:adsk.eagle:package:6326559/1" type="model">
+<description>6-SOP, 0.95 mm pitch, 2.75 mm span, 2.90 X 1.50 X 1.10 mm body
+&lt;p&gt;6-pin SOP package with 0.95 mm pitch, 2.75 mm span with body size 2.90 X 1.50 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP95P275X110-6"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1404,6 +1504,55 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <wire x1="7.62" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
 <text x="-15.24" y="25.4" size="3.81" layer="95">&gt;NAME</text>
 <text x="-15.24" y="21.59" size="2.54" layer="95">SN65DSI83</text>
+<pin name="VCORE" x="12.7" y="17.78" length="middle" rot="R180"/>
+</symbol>
+<symbol name="74LVC1G3157">
+<pin name="Y1" x="-12.7" y="5.08" length="middle"/>
+<pin name="Y0" x="-12.7" y="-5.08" length="middle"/>
+<pin name="Z" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="S" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="-12.7" y="7.62" length="middle"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="3.81" layer="95">&gt;NAME</text>
+<text x="-7.62" y="11.43" size="2.54" layer="95">74LVC1G3157</text>
+</symbol>
+<symbol name="TPS613222A">
+<pin name="SW" x="-10.16" y="0" length="short"/>
+<pin name="VOUT" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" length="short" rot="R180"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<text x="-7.62" y="7.62" size="3.81" layer="95">&gt;NAME</text>
+<text x="-7.62" y="3.81" size="2.54" layer="95">TPS613222A</text>
+</symbol>
+<symbol name="IND">
+<pin name="1" x="15.24" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="7.62" y2="1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="1.27" x2="5.08" y2="1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="7.62" y1="1.27" x2="10.16" y2="1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="10.16" y1="1.27" x2="12.7" y2="1.27" width="0.1524" layer="94" curve="-180"/>
+<text x="3.0988" y="-2.9972" size="2.54" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="2.8956" y="3.3528" size="2.54" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1885,9 +2034,99 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 </gates>
 <devices>
 <device name="PBGA-N64" package="BGA81C50P9X9_500X500X100">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="A1"/>
+<connect gate="G$1" pin="A_CLKN" pad="F9"/>
+<connect gate="G$1" pin="A_CLKP" pad="F8"/>
+<connect gate="G$1" pin="A_Y0N" pad="C9"/>
+<connect gate="G$1" pin="A_Y0P" pad="C8"/>
+<connect gate="G$1" pin="A_Y1N" pad="D9"/>
+<connect gate="G$1" pin="A_Y1P" pad="D8"/>
+<connect gate="G$1" pin="A_Y2N" pad="E9"/>
+<connect gate="G$1" pin="A_Y2P" pad="E8"/>
+<connect gate="G$1" pin="A_Y3N" pad="G9"/>
+<connect gate="G$1" pin="A_Y3P" pad="G8"/>
+<connect gate="G$1" pin="DA0N" pad="J3"/>
+<connect gate="G$1" pin="DA0P" pad="H3"/>
+<connect gate="G$1" pin="DA1N" pad="J4"/>
+<connect gate="G$1" pin="DA1P" pad="H4"/>
+<connect gate="G$1" pin="DA2N" pad="J6"/>
+<connect gate="G$1" pin="DA2P" pad="H6"/>
+<connect gate="G$1" pin="DA3N" pad="J7"/>
+<connect gate="G$1" pin="DA3P" pad="H7"/>
+<connect gate="G$1" pin="DACN" pad="J5"/>
+<connect gate="G$1" pin="DACP" pad="H5"/>
+<connect gate="G$1" pin="EN" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="A2 A8 B9 D5 E4 F4 F5 H9"/>
+<connect gate="G$1" pin="IRQ" pad="J9"/>
+<connect gate="G$1" pin="REFCLK" pad="H2"/>
+<connect gate="G$1" pin="SCL" pad="H1"/>
+<connect gate="G$1" pin="SDA" pad="J1"/>
+<connect gate="G$1" pin="VCC" pad="A9 B8 D6 E5 E6 F6 J2"/>
+<connect gate="G$1" pin="VCORE" pad="J8"/>
+</connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:6308957/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G3157" prefix="U">
+<gates>
+<gate name="G$1" symbol="74LVC1G3157" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TSOP6" package="SOP95P275X110-6">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="S" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y0" pad="3"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Z" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6326559/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS613222A" prefix="U">
+<gates>
+<gate name="G$1" symbol="TPS613222A" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6091633/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DFE252012P-4R7M=P2" prefix="L" uservalue="yes">
+<gates>
+<gate name="A" symbol="IND" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="&quot;" package="1008">
+<connects>
+<connect gate="A" pin="1" pad="P$1"/>
+<connect gate="A" pin="2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
