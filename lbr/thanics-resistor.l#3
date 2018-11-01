@@ -443,7 +443,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RC0402FR-071KL">
+<deviceset name="RC0402FR-071KL" prefix="R">
 <gates>
 <gate name="B" symbol="R-US" x="0" y="0"/>
 </gates>

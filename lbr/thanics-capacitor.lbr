@@ -299,6 +299,25 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="CL05A104MP5NNNC" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RATING" value="10V"/>
+<attribute name="VALUE" value="100nF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
