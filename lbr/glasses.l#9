@@ -2218,6 +2218,23 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MIC5504-2.8" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC5504" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6091633/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="2.8"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

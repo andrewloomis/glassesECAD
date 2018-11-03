@@ -443,7 +443,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RC0402FR-071KL">
+<deviceset name="RC0402FR-071KL" prefix="R">
 <gates>
 <gate name="B" symbol="R-US" x="0" y="0"/>
 </gates>
@@ -474,6 +474,44 @@
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="3.2k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC0402JR-0710KL" prefix="R">
+<gates>
+<gate name="G$1" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TOL" value="5%"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC0402JR-0756KL" prefix="R">
+<gates>
+<gate name="G$1" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TOL" value="5%"/>
+<attribute name="VALUE" value="56k"/>
 </technology>
 </technologies>
 </device>

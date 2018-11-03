@@ -275,21 +275,18 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RMCF0603JT5K10" prefix="R" uservalue="yes">
+<deviceset name="RC0402JR-075K1L" prefix="R" uservalue="yes">
 <gates>
 <gate name="A" symbol="R-US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="R0603">
+<device name="" package="R0402">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VALUE" value="5.1k"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -512,6 +509,25 @@
 <technology name="">
 <attribute name="TOL" value="5%"/>
 <attribute name="VALUE" value="56k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC0402FR-072KL" prefix="R">
+<gates>
+<gate name="G$1" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TOL" value="1%"/>
+<attribute name="VALUE" value="2k"/>
 </technology>
 </technologies>
 </device>

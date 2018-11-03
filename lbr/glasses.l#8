@@ -2224,6 +2224,12 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 </gates>
 <devices>
 <device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:6091633/1"/>
 </package3dinstances>
