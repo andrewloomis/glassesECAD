@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -343,6 +343,31 @@
 <wire x1="-2.8" y1="-1.8" x2="-2.8" y2="-4.6" width="0.127" layer="21"/>
 <wire x1="2.8" y1="-1.8" x2="2.8" y2="-4.6" width="0.127" layer="21"/>
 </package>
+<package name="S2B-XH-A(LF)(SN)">
+<pad name="1" x="0" y="1.27" drill="1" diameter="1.778"/>
+<pad name="2" x="0" y="-1.27" drill="1" diameter="1.778"/>
+<wire x1="-9.2" y1="1.27" x2="-9.2" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-9.2" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-9.2" y1="-1.27" x2="-9.2" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-9.2" y1="-3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<text x="-8.89" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="GRPB042MWCN-RC">
+<pad name="P$1" x="-1.905" y="-0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$2" x="-1.905" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$3" x="-0.635" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$4" x="-0.635" y="-0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$5" x="0.635" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$6" x="0.635" y="-0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$7" x="1.905" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="P$8" x="1.905" y="-0.635" drill="0.7" diameter="0.9906"/>
+<wire x1="-2.794" y1="1.524" x2="-2.794" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="-1.524" x2="2.794" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="2.794" y1="-1.524" x2="2.794" y2="1.524" width="0.127" layer="21"/>
+<wire x1="2.794" y1="1.524" x2="-2.794" y2="1.524" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SFV30R-1STE1HLF">
@@ -485,6 +510,32 @@
 <wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="13.97" size="3.81" layer="95">&gt;NAME</text>
 <text x="-13.97" y="11.43" size="1.524" layer="95">BM10NB(0.8)-16DS-0.4V(51)</text>
+</symbol>
+<symbol name="S2B-XH-A(LF)(SN)">
+<pin name="1" x="-10.16" y="2.54" length="middle"/>
+<pin name="2" x="-10.16" y="0" length="middle"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="8.89" size="3.81" layer="95">&gt;NAME</text>
+<text x="-5.08" y="6.35" size="1.778" layer="95">S2B-XH-A(LF)(SN)</text>
+</symbol>
+<symbol name="GRPB042MWCN-RC">
+<pin name="1" x="-10.16" y="5.08" length="middle"/>
+<pin name="2" x="-10.16" y="2.54" length="middle"/>
+<pin name="3" x="-10.16" y="0" length="middle"/>
+<pin name="4" x="-10.16" y="-2.54" length="middle"/>
+<pin name="8" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="7" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="6" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="5" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="11.43" size="3.048" layer="95">&gt;NAME</text>
+<text x="-7.62" y="8.89" size="1.778" layer="95">GRPB042MWCN-RC </text>
 </symbol>
 </symbols>
 <devicesets>
@@ -652,6 +703,22 @@
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S2B-XH-A(LF)(SN)" prefix="J">
+<gates>
+<gate name="G$1" symbol="S2B-XH-A(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S2B-XH-A(LF)(SN)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
