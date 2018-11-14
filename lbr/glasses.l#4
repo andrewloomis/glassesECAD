@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1018,6 +1018,88 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <circle x="-2" y="-3" radius="0.5" width="0.5" layer="21"/>
 <text x="-1" y="-4.238" size="1.524" layer="21">&gt;NAME</text>
 </package>
+<package name="LTR-303ALS-01">
+<smd name="2" x="0" y="-0.9" dx="0.65" dy="0.3" layer="1" rot="R90"/>
+<smd name="1" x="-0.65" y="-0.9" dx="0.65" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.65" y="-0.9" dx="0.65" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-0.65" y="0.9" dx="0.65" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0" y="0.9" dx="0.65" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="0.9" dx="0.65" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-1" y1="0.9" x2="-1" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1" y1="0.9" x2="1" y2="-0.8" width="0.127" layer="21"/>
+<circle x="-1.3" y="-1" radius="0.2" width="0.3" layer="21"/>
+</package>
+<package name="4X4MM_64FBGA">
+<smd name="A1" x="-1.4" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B1" x="-1.4" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C1" x="-1.4" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D1" x="-1.4" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E1" x="-1.4" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F1" x="-1.4" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G1" x="-1.4" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H1" x="-1.4" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<smd name="A2" x="-1" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="A3" x="-0.6" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="A4" x="-0.2" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="A5" x="0.2" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="A6" x="0.6" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="A7" x="1" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="A8" x="1.4" y="1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B2" x="-1" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C2" x="-1" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D2" x="-1" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E2" x="-1" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F2" x="-1" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G2" x="-1" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H2" x="-1" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B3" x="-0.6" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C3" x="-0.6" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D3" x="-0.6" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E3" x="-0.6" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F3" x="-0.6" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G3" x="-0.6" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H3" x="-0.6" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B4" x="-0.2" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C4" x="-0.2" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D4" x="-0.2" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E4" x="-0.2" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F4" x="-0.2" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G4" x="-0.2" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H4" x="-0.2" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B5" x="0.2" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C5" x="0.2" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D5" x="0.2" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E5" x="0.2" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F5" x="0.2" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G5" x="0.2" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H5" x="0.2" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B6" x="0.6" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C6" x="0.6" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D6" x="0.6" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E6" x="0.6" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F6" x="0.6" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G6" x="0.6" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H6" x="0.6" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B7" x="1" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C7" x="1" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D7" x="1" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E7" x="1" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F7" x="1" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G7" x="1" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H7" x="1" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="B8" x="1.4" y="1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="C8" x="1.4" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="D8" x="1.4" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="E8" x="1.4" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="F8" x="1.4" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="G8" x="1.4" y="-1" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<smd name="H8" x="1.4" y="-1.4" dx="0.2" dy="0.2" layer="1" roundness="100"/>
+<circle x="-2.8" y="1.6" radius="0.4" width="0.5" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT95P280X110-5" urn="urn:adsk.eagle:package:6091633/1" locally_modified="yes" type="model">
@@ -1788,17 +1870,82 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <text x="7.62" y="0" size="2.286" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="LTR-303ALS-01">
-<pin name="P$1" x="-15.24" y="2.54" length="middle"/>
-<pin name="P$2" x="-15.24" y="0" length="middle"/>
-<pin name="P$3" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="P$4" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="P$5" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="0" length="middle"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="INT" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <text x="-10.16" y="8.89" size="3.81" layer="95">&gt;NAME</text>
 <text x="-10.16" y="6.35" size="1.778" layer="95">LTR-303ALS-01 </text>
+</symbol>
+<symbol name="KCD-A914">
+<pin name="CKP" x="-15.24" y="10.16" length="middle"/>
+<pin name="CKN" x="-15.24" y="7.62" length="middle"/>
+<pin name="DP0" x="-15.24" y="2.54" length="middle"/>
+<pin name="DN0" x="-15.24" y="0" length="middle"/>
+<pin name="DP1" x="-15.24" y="-5.08" length="middle"/>
+<pin name="DN1" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VIDH_R" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="VIDH_G" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="VIDH_B" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="VIDL_R" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="VIDL_G" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="VIDL_B" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="DIS_CK0" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="DIS_CK1" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="DIS_HS" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="DIS_INST" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="DIS_EN" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="DIS_SLEEP" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="DIS_DWN" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="RSTN" x="-15.24" y="-12.7" length="middle"/>
+<pin name="SDA" x="-15.24" y="-15.24" length="middle"/>
+<pin name="SCL" x="-15.24" y="-17.78" length="middle"/>
+<pin name="CLK" x="-15.24" y="-20.32" length="middle"/>
+<pin name="CLK_SW" x="-15.24" y="-22.86" length="middle"/>
+<pin name="TEST_IO1" x="-15.24" y="-30.48" length="middle"/>
+<pin name="TEST_IO2" x="-15.24" y="-33.02" length="middle"/>
+<pin name="TEST_IO3" x="20.32" y="-27.94" length="middle" rot="R180"/>
+<pin name="TEST_IO4" x="20.32" y="-30.48" length="middle" rot="R180"/>
+<pin name="TEST_IO0" x="-15.24" y="-27.94" length="middle"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-35.56" x2="15.24" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-35.56" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="17.78" size="3.81" layer="95">&gt;NAME</text>
+<text x="-10.16" y="13.97" size="2.54" layer="95">KCD-A914</text>
+</symbol>
+<symbol name="KCD-A914-B">
+<pin name="DAC_VREF" x="-17.78" y="17.78" length="middle"/>
+<pin name="DAC_COMP" x="-17.78" y="15.24" length="middle"/>
+<pin name="QP_CLKA" x="-17.78" y="10.16" length="middle"/>
+<pin name="QP_CLKB" x="-17.78" y="7.62" length="middle"/>
+<pin name="QP_FB5" x="-17.78" y="5.08" length="middle"/>
+<pin name="QP_REFO" x="-17.78" y="2.54" length="middle"/>
+<pin name="FB_REF" x="-17.78" y="-2.54" length="middle"/>
+<pin name="PWM" x="-17.78" y="-5.08" length="middle"/>
+<pin name="AVDD_AMP" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="AVDD_DAC" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="VDDA_QP" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="VDDA_BLD" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="VDDA_REF" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="VDD_MIPI" x="22.86" y="5.08" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<text x="-12.7" y="25.4" size="3.81" layer="95">&gt;NAME</text>
+<text x="-12.7" y="21.59" size="2.54" layer="95">KCD-A914</text>
+<text x="8.89" y="21.59" size="2.54" layer="95">B</text>
+<pin name="VDDA_MIPI" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD_DIS" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="VSS" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="VDD_SC" x="22.86" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2513,6 +2660,88 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <connect gate="G$1" pin="B" pad="2"/>
 <connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="R" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTR-303ALS-01" prefix="U">
+<gates>
+<gate name="G$1" symbol="LTR-303ALS-01" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTR-303ALS-01">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="INT" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KCD-A914" prefix="U">
+<gates>
+<gate name="A" symbol="KCD-A914" x="-2.54" y="40.64"/>
+<gate name="B" symbol="KCD-A914-B" x="-2.54" y="-27.94"/>
+</gates>
+<devices>
+<device name="" package="4X4MM_64FBGA">
+<connects>
+<connect gate="A" pin="CKN" pad="C5"/>
+<connect gate="A" pin="CKP" pad="D5"/>
+<connect gate="A" pin="CLK" pad="B1"/>
+<connect gate="A" pin="CLK_SW" pad="A1"/>
+<connect gate="A" pin="DIS_CK0" pad="G6"/>
+<connect gate="A" pin="DIS_CK1" pad="H6"/>
+<connect gate="A" pin="DIS_DWN" pad="F8"/>
+<connect gate="A" pin="DIS_EN" pad="H8"/>
+<connect gate="A" pin="DIS_HS" pad="H7"/>
+<connect gate="A" pin="DIS_INST" pad="G7"/>
+<connect gate="A" pin="DIS_SLEEP" pad="G8"/>
+<connect gate="A" pin="DN0" pad="B6"/>
+<connect gate="A" pin="DN1" pad="A4"/>
+<connect gate="A" pin="DP0" pad="A6"/>
+<connect gate="A" pin="DP1" pad="A3"/>
+<connect gate="A" pin="RSTN" pad="E8"/>
+<connect gate="A" pin="SCL" pad="C8"/>
+<connect gate="A" pin="SDA" pad="D8"/>
+<connect gate="A" pin="TEST_IO0" pad="D6"/>
+<connect gate="A" pin="TEST_IO1" pad="D7"/>
+<connect gate="A" pin="TEST_IO2" pad="F6"/>
+<connect gate="A" pin="TEST_IO3" pad="F5"/>
+<connect gate="A" pin="TEST_IO4" pad="E5"/>
+<connect gate="A" pin="VIDH_B" pad="C2"/>
+<connect gate="A" pin="VIDH_G" pad="D2"/>
+<connect gate="A" pin="VIDH_R" pad="E2"/>
+<connect gate="A" pin="VIDL_B" pad="C1"/>
+<connect gate="A" pin="VIDL_G" pad="D3"/>
+<connect gate="A" pin="VIDL_R" pad="E1"/>
+<connect gate="B" pin="AVDD_AMP" pad="D1"/>
+<connect gate="B" pin="AVDD_DAC" pad="F1"/>
+<connect gate="B" pin="DAC_COMP" pad="E3"/>
+<connect gate="B" pin="DAC_VREF" pad="G1"/>
+<connect gate="B" pin="FB_REF" pad="G4"/>
+<connect gate="B" pin="PWM" pad="H4"/>
+<connect gate="B" pin="QP_CLKA" pad="H2"/>
+<connect gate="B" pin="QP_CLKB" pad="G2"/>
+<connect gate="B" pin="QP_FB5" pad="G3"/>
+<connect gate="B" pin="QP_REFO" pad="H3"/>
+<connect gate="B" pin="VDD" pad="B2 E7"/>
+<connect gate="B" pin="VDDA_BLD" pad="F4"/>
+<connect gate="B" pin="VDDA_MIPI" pad="A5 A7 C4"/>
+<connect gate="B" pin="VDDA_QP" pad="H1"/>
+<connect gate="B" pin="VDDA_REF" pad="D4"/>
+<connect gate="B" pin="VDD_DIS" pad="H5"/>
+<connect gate="B" pin="VDD_MIPI" pad="A8"/>
+<connect gate="B" pin="VDD_SC" pad="C7"/>
+<connect gate="B" pin="VSS" pad="B3 B4 B5 B7 B8 C3 C6 E4 E6 F2 F3 F7 G5"/>
 </connects>
 <technologies>
 <technology name=""/>
