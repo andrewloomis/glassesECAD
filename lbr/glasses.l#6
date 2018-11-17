@@ -1918,7 +1918,6 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <wire x1="15.24" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
 <text x="-10.16" y="17.78" size="3.81" layer="95">&gt;NAME</text>
 <text x="-10.16" y="13.97" size="2.54" layer="95">KCD-A914</text>
-<text x="11.43" y="13.97" size="2.54" layer="95">A</text>
 </symbol>
 <symbol name="KCD-A914-B">
 <pin name="DAC_VREF" x="-17.78" y="17.78" length="middle"/>
@@ -2689,32 +2688,60 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 </deviceset>
 <deviceset name="KCD-A914" prefix="U">
 <gates>
-<gate name="G$1" symbol="KCD-A914" x="-2.54" y="40.64"/>
-<gate name="G$2" symbol="KCD-A914-B" x="-2.54" y="-27.94"/>
+<gate name="A" symbol="KCD-A914" x="-2.54" y="40.64"/>
+<gate name="B" symbol="KCD-A914-B" x="-2.54" y="-27.94"/>
 </gates>
 <devices>
 <device name="" package="4X4MM_64FBGA">
 <connects>
-<connect gate="G$1" pin="CKN" pad="C5"/>
-<connect gate="G$1" pin="CKP" pad="D5"/>
-<connect gate="G$1" pin="CLK" pad="B1"/>
-<connect gate="G$1" pin="CLK_SW" pad="A1"/>
-<connect gate="G$1" pin="DN0" pad="B6"/>
-<connect gate="G$1" pin="DN1" pad="A4"/>
-<connect gate="G$1" pin="DP0" pad="A6"/>
-<connect gate="G$1" pin="DP1" pad="A3"/>
-<connect gate="G$1" pin="SCL" pad="C8"/>
-<connect gate="G$1" pin="SDA" pad="D8"/>
-<connect gate="G$1" pin="VIDH_B" pad="C2"/>
-<connect gate="G$1" pin="VIDH_G" pad="D2"/>
-<connect gate="G$1" pin="VIDL_B" pad="C1"/>
-<connect gate="G$1" pin="VIDL_G" pad="D3"/>
-<connect gate="G$2" pin="AVDD_AMP" pad="D1"/>
-<connect gate="G$2" pin="VDD" pad="B2 E7"/>
-<connect gate="G$2" pin="VDDA_MIPI" pad="A5 A7 C4"/>
-<connect gate="G$2" pin="VDDA_REF" pad="D4"/>
-<connect gate="G$2" pin="VDD_MIPI" pad="A8"/>
-<connect gate="G$2" pin="VSS" pad="B3 B4 B5 B7 B8 C3 C6 E4 E6 F2 F3 F7 G5"/>
+<connect gate="A" pin="CKN" pad="C5"/>
+<connect gate="A" pin="CKP" pad="D5"/>
+<connect gate="A" pin="CLK" pad="B1"/>
+<connect gate="A" pin="CLK_SW" pad="A1"/>
+<connect gate="A" pin="DIS_CK0" pad="G6"/>
+<connect gate="A" pin="DIS_CK1" pad="H6"/>
+<connect gate="A" pin="DIS_DWN" pad="F8"/>
+<connect gate="A" pin="DIS_EN" pad="H8"/>
+<connect gate="A" pin="DIS_HS" pad="H7"/>
+<connect gate="A" pin="DIS_INST" pad="G7"/>
+<connect gate="A" pin="DIS_SLEEP" pad="G8"/>
+<connect gate="A" pin="DN0" pad="B6"/>
+<connect gate="A" pin="DN1" pad="A4"/>
+<connect gate="A" pin="DP0" pad="A6"/>
+<connect gate="A" pin="DP1" pad="A3"/>
+<connect gate="A" pin="RSTN" pad="E8"/>
+<connect gate="A" pin="SCL" pad="C8"/>
+<connect gate="A" pin="SDA" pad="D8"/>
+<connect gate="A" pin="TEST_IO0" pad="D6"/>
+<connect gate="A" pin="TEST_IO1" pad="D7"/>
+<connect gate="A" pin="TEST_IO2" pad="F6"/>
+<connect gate="A" pin="TEST_IO3" pad="F5"/>
+<connect gate="A" pin="TEST_IO4" pad="E5"/>
+<connect gate="A" pin="VIDH_B" pad="C2"/>
+<connect gate="A" pin="VIDH_G" pad="D2"/>
+<connect gate="A" pin="VIDH_R" pad="E2"/>
+<connect gate="A" pin="VIDL_B" pad="C1"/>
+<connect gate="A" pin="VIDL_G" pad="D3"/>
+<connect gate="A" pin="VIDL_R" pad="E1"/>
+<connect gate="B" pin="AVDD_AMP" pad="D1"/>
+<connect gate="B" pin="AVDD_DAC" pad="F1"/>
+<connect gate="B" pin="DAC_COMP" pad="E3"/>
+<connect gate="B" pin="DAC_VREF" pad="G1"/>
+<connect gate="B" pin="FB_REF" pad="G4"/>
+<connect gate="B" pin="PWM" pad="H4"/>
+<connect gate="B" pin="QP_CLKA" pad="H2"/>
+<connect gate="B" pin="QP_CLKB" pad="G2"/>
+<connect gate="B" pin="QP_FB5" pad="G3"/>
+<connect gate="B" pin="QP_REFO" pad="H3"/>
+<connect gate="B" pin="VDD" pad="B2 E7"/>
+<connect gate="B" pin="VDDA_BLD" pad="F4"/>
+<connect gate="B" pin="VDDA_MIPI" pad="A5 A7 C4"/>
+<connect gate="B" pin="VDDA_QP" pad="H1"/>
+<connect gate="B" pin="VDDA_REF" pad="D4"/>
+<connect gate="B" pin="VDD_DIS" pad="H5"/>
+<connect gate="B" pin="VDD_MIPI" pad="A8"/>
+<connect gate="B" pin="VDD_SC" pad="C7"/>
+<connect gate="B" pin="VSS" pad="B3 B4 B5 B7 B8 C3 C6 E4 E6 F2 F3 F7 G5"/>
 </connects>
 <technologies>
 <technology name=""/>

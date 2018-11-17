@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -354,6 +354,22 @@
 <wire x1="2.54" y1="-3.81" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <text x="-8.89" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="GRPB042MWCN-RC">
+<pad name="1" x="-1.905" y="-0.635" drill="0.7" diameter="0.9906"/>
+<pad name="8" x="-1.905" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="7" x="-0.635" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="2" x="-0.635" y="-0.635" drill="0.7" diameter="0.9906"/>
+<pad name="6" x="0.635" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="3" x="0.635" y="-0.635" drill="0.7" diameter="0.9906"/>
+<pad name="5" x="1.905" y="0.635" drill="0.7" diameter="0.9906"/>
+<pad name="4" x="1.905" y="-0.635" drill="0.7" diameter="0.9906"/>
+<wire x1="-2.794" y1="1.524" x2="-2.794" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="-1.524" x2="2.794" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="2.794" y1="-1.524" x2="2.794" y2="1.524" width="0.127" layer="21"/>
+<wire x1="2.794" y1="1.524" x2="-2.794" y2="1.524" width="0.127" layer="21"/>
+<text x="-2.794" y="1.778" size="1.016" layer="21">&gt;NAME</text>
+<circle x="-3.556" y="-1.016" radius="0.254" width="0.508" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SFV30R-1STE1HLF">
@@ -520,8 +536,8 @@
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="12.7" size="3.048" layer="95">&gt;NAME</text>
-<text x="-7.62" y="10.16" size="1.778" layer="95">GRPB042MWCN-RC </text>
+<text x="-7.62" y="11.43" size="3.048" layer="95">&gt;NAME</text>
+<text x="-7.62" y="8.89" size="1.778" layer="95">GRPB042MWCN-RC </text>
 </symbol>
 </symbols>
 <devicesets>
