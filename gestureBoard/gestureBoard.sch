@@ -186,7 +186,36 @@
 <circle x="-2" y="-3" radius="0.5" width="0.5" layer="21"/>
 <text x="-1" y="-4.238" size="1.524" layer="21">&gt;NAME</text>
 </package>
+<package name="SOP65P490X110-8" urn="urn:adsk.eagle:footprint:6948351/1" locally_modified="yes">
+<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<circle x="-2.2288" y="1.7486" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.55" y1="1.5586" x2="1.55" y2="1.5586" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="-1.5586" x2="1.55" y2="-1.5586" width="0.12" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.12" layer="51"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.12" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.12" layer="51"/>
+<smd name="1" x="-2.1533" y="0.975" dx="1.5" dy="0.45" layer="1"/>
+<smd name="2" x="-2.1533" y="0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="3" x="-2.1533" y="-0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="4" x="-2.1533" y="-0.975" dx="1.5" dy="0.45" layer="1"/>
+<smd name="5" x="2.1533" y="-0.975" dx="1.5" dy="0.45" layer="1"/>
+<smd name="6" x="2.1533" y="-0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="7" x="2.1533" y="0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="8" x="2.1533" y="0.975" dx="1.5" dy="0.45" layer="1"/>
+<text x="0" y="2.6336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOP65P490X110-8" urn="urn:adsk.eagle:package:6948348/1" locally_modified="yes" type="model">
+<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P490X110-8"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="APDS-9960">
 <pin name="VDD" x="-10.16" y="5.08" length="middle"/>
@@ -276,6 +305,22 @@
 <text x="5.08" y="-5.08" size="1.778" layer="95">B</text>
 <text x="7.62" y="0" size="2.286" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="PCA9553">
+<pin name="VDD" x="-12.7" y="5.08" length="middle"/>
+<pin name="SDA" x="-12.7" y="2.54" length="middle"/>
+<pin name="SCL" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="LED0" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="LED1" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="LED2" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="LED3" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="11.43" size="3.81" layer="95">&gt;NAME</text>
+<text x="-7.62" y="8.89" size="2.032" layer="95">PCA9553</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="APDS-9960" prefix="U">
@@ -312,6 +357,31 @@
 <connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="R" pad="4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCA9553" prefix="U">
+<gates>
+<gate name="G$1" symbol="PCA9553" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="TSSOP8" package="SOP65P490X110-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="LED0" pad="1"/>
+<connect gate="G$1" pin="LED1" pad="2"/>
+<connect gate="G$1" pin="LED2" pad="3"/>
+<connect gate="G$1" pin="LED3" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6948348/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -623,6 +693,9 @@
 <part name="J1" library="thanics-connector" deviceset="GRPB042MWCN-RC" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="U3" library="glasses" deviceset="PCA9553" device="TSSOP8" package3d_urn="urn:adsk.eagle:package:6948348/1"/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -693,6 +766,15 @@
 <instance part="GND3" gate="1" x="60.96" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="58.42" y="-5.08" size="1.778" layer="96"/>
 </instance>
+<instance part="U3" gate="G$1" x="27.94" y="-33.02" smashed="yes">
+<attribute name="NAME" x="20.32" y="-21.59" size="3.81" layer="95"/>
+</instance>
+<instance part="+3V5" gate="G$1" x="10.16" y="-20.32" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="12.7" y="-25.4" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="GND4" gate="1" x="12.7" y="-40.64" smashed="yes">
+<attribute name="VALUE" x="10.16" y="-43.18" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -742,6 +824,12 @@
 <wire x1="20.32" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="15.24" y1="-27.94" x2="10.16" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-27.94" x2="10.16" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -775,9 +863,9 @@
 <label x="-20.32" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="40.64" y1="0" x2="55.88" y2="0" width="0.1524" layer="91"/>
-<label x="43.18" y="0" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="LED0"/>
+<wire x1="40.64" y1="-27.94" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
+<label x="43.18" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_G" class="0">
@@ -787,9 +875,9 @@
 <label x="-20.32" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="20.32" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
-<label x="10.16" y="2.54" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="LED1"/>
+<wire x1="40.64" y1="-30.48" x2="55.88" y2="-30.48" width="0.1524" layer="91"/>
+<label x="43.18" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_B" class="0">
@@ -799,9 +887,9 @@
 <label x="-20.32" y="-22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="20.32" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
-<label x="10.16" y="0" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="LED2"/>
+<wire x1="40.64" y1="-33.02" x2="55.88" y2="-33.02" width="0.1524" layer="91"/>
+<label x="43.18" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -826,6 +914,12 @@
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="40.64" y1="2.54" x2="60.96" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="2.54" x2="60.96" y2="0" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="15.24" y1="-35.56" x2="12.7" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-35.56" x2="12.7" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -864,6 +958,11 @@
 <wire x1="20.32" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="91"/>
 <label x="12.7" y="5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SCL"/>
+<wire x1="15.24" y1="-33.02" x2="5.08" y2="-33.02" width="0.1524" layer="91"/>
+<label x="7.62" y="-33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -878,10 +977,27 @@
 <wire x1="40.64" y1="7.62" x2="55.88" y2="7.62" width="0.1524" layer="91"/>
 <label x="43.18" y="7.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SDA"/>
+<wire x1="15.24" y1="-30.48" x2="5.08" y2="-30.48" width="0.1524" layer="91"/>
+<label x="7.62" y="-30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
