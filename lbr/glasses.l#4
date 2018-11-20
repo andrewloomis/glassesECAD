@@ -2967,7 +2967,7 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCA9553">
+<deviceset name="PCA9553" prefix="U">
 <gates>
 <gate name="G$1" symbol="PCA9553" x="0" y="-2.54"/>
 </gates>

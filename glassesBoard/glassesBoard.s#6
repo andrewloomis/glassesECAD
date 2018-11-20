@@ -8377,11 +8377,6 @@ S4 - OFF</text>
 </net>
 <net name="DSI_EN" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="GPIO118"/>
-<wire x1="-160.02" y1="-218.44" x2="-132.08" y2="-218.44" width="0.1524" layer="91"/>
-<label x="-149.86" y="-218.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="EN"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="-50.8" x2="-86.36" y2="-50.8" width="0.1524" layer="91"/>
@@ -8390,6 +8385,11 @@ S4 - OFF</text>
 <wire x1="-86.36" y1="-54.356" x2="-86.36" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-86.36" y="-50.8"/>
 <label x="-83.82" y="-50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO8"/>
+<wire x1="-220.98" y1="-99.06" x2="-246.38" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-243.84" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -8717,42 +8717,6 @@ S4 - OFF</text>
 <pinref part="U10" gate="A" pin="PA4"/>
 <wire x1="-515.62" y1="-121.92" x2="-495.3" y2="-121.92" width="0.1524" layer="91"/>
 <label x="-513.08" y="-121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED_R" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="5"/>
-<wire x1="-393.7" y1="-254" x2="-378.46" y2="-254" width="0.1524" layer="91"/>
-<label x="-391.16" y="-254" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PM_MPP4"/>
-<wire x1="-220.98" y1="-144.78" x2="-246.38" y2="-144.78" width="0.1524" layer="91"/>
-<label x="-243.84" y="-144.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED_G" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="-414.02" y1="-251.46" x2="-431.8" y2="-251.46" width="0.1524" layer="91"/>
-<label x="-424.18" y="-251.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PM_MPP2"/>
-<wire x1="-220.98" y1="-147.32" x2="-246.38" y2="-147.32" width="0.1524" layer="91"/>
-<label x="-243.84" y="-147.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED_B" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="-414.02" y1="-254" x2="-431.8" y2="-254" width="0.1524" layer="91"/>
-<label x="-424.18" y="-254" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PM_MPP3"/>
-<wire x1="-220.98" y1="-139.7" x2="-246.38" y2="-139.7" width="0.1524" layer="91"/>
-<label x="-243.84" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$36" class="0">

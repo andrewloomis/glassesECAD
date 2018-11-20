@@ -286,7 +286,10 @@
 <connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOL" value="5%"/>
+<attribute name="VALUE" value="5.1k"/>
+</technology>
 </technologies>
 </device>
 </devices>

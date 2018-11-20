@@ -111,9 +111,8 @@
 <wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="15.24" size="2.286" layer="95">&gt;NAME</text>
-<text x="-12.7" y="12.7" size="2.286" layer="95">&gt;VALUE</text>
-<text x="-12.7" y="10.16" size="2.286" layer="95">9-Axis MPU</text>
+<text x="-12.7" y="12.7" size="2.286" layer="95">&gt;NAME</text>
+<text x="-12.7" y="10.16" size="2.286" layer="95">ICM-20948</text>
 </symbol>
 </symbols>
 <devicesets>

@@ -461,6 +461,24 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="RT0402DRE073K2L" prefix="R">
+<gates>
+<gate name="B" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0402">
+<connects>
+<connect gate="B" pin="1" pad="1"/>
+<connect gate="B" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="3.2k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

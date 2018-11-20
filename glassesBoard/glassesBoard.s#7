@@ -8719,51 +8719,6 @@ S4 - OFF</text>
 <label x="-513.08" y="-121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LED_R" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="5"/>
-<wire x1="-393.7" y1="-254" x2="-378.46" y2="-254" width="0.1524" layer="91"/>
-<label x="-391.16" y="-254" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PM_MPP4"/>
-<wire x1="-220.98" y1="-144.78" x2="-246.38" y2="-144.78" width="0.1524" layer="91"/>
-<label x="-243.84" y="-144.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED_G" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="-414.02" y1="-251.46" x2="-431.8" y2="-251.46" width="0.1524" layer="91"/>
-<label x="-424.18" y="-251.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="GPIO109"/>
-<wire x1="-220.98" y1="-210.82" x2="-246.38" y2="-210.82" width="0.1524" layer="91"/>
-<label x="-243.84" y="-210.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PM_MPP2"/>
-<wire x1="-220.98" y1="-147.32" x2="-246.38" y2="-147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED_B" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="-414.02" y1="-254" x2="-431.8" y2="-254" width="0.1524" layer="91"/>
-<label x="-424.18" y="-254" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="GPIO62"/>
-<wire x1="-220.98" y1="-213.36" x2="-246.38" y2="-213.36" width="0.1524" layer="91"/>
-<label x="-243.84" y="-213.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="PM_MPP3"/>
-<wire x1="-220.98" y1="-139.7" x2="-246.38" y2="-139.7" width="0.1524" layer="91"/>
-<label x="-243.84" y="-139.7" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="OE"/>

@@ -191,10 +191,16 @@
 <wire x1="-0.318" y1="28.1942" x2="-0.318" y2="0" width="0" layer="20"/>
 <dimension x1="0" y1="27.61" x2="0" y2="0" x3="-5.08" y3="13.805" textsize="1.778" layer="47"/>
 <text x="61.6068" y="14.4192" size="3" layer="22" rot="MR0">Touch</text>
-<wire x1="29.0896" y1="25.94" x2="29.0896" y2="2.0508" width="0.1524" layer="22"/>
-<text x="44.1452" y="25.146" size="1.778" layer="22" rot="MR0">G</text>
-<text x="49.022" y="24.0792" size="1.778" layer="22" rot="MR270">RX</text>
-<text x="51.6128" y="23.9268" size="1.778" layer="22" rot="MR270">TX</text>
+<text x="46.3296" y="26.0604" size="1.778" layer="22" rot="MR270">G</text>
+<text x="48.8188" y="26.1112" size="1.778" layer="22" rot="MR270">RX</text>
+<text x="51.308" y="26.1112" size="1.778" layer="22" rot="MR270">TX</text>
+<text x="75.184" y="20.9296" size="0.762" layer="26" rot="MR90">FASTBOOT</text>
+<text x="76.3016" y="20.9804" size="0.762" layer="26" rot="MR90">SD BOOT</text>
+<text x="77.3176" y="20.9804" size="0.762" layer="26" rot="MR90">USB DEVICE</text>
+<text x="78.3336" y="20.9804" size="0.762" layer="26" rot="MR90">USB BOOT</text>
+<text x="67.2084" y="0.3048" size="0.762" layer="25">CLK</text>
+<text x="70.1548" y="0.3556" size="0.762" layer="25">DATA</text>
+<text x="73.914" y="0.1016" size="0.762" layer="25">RST</text>
 </plain>
 <libraries>
 <library name="glasses">
@@ -861,6 +867,7 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <smd name="22" x="-0.2" y="1.55" dx="0.7" dy="0.2" layer="1" roundness="100" rot="R270"/>
 <smd name="23" x="-0.6" y="1.55" dx="0.7" dy="0.2" layer="1" roundness="100" rot="R270"/>
 <smd name="24" x="-1" y="1.55" dx="0.7" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<text x="-1.27" y="2.54" size="1.016" layer="25">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1534,22 +1541,24 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$1" library="glasses" package="DART-SD410" value="DART-SD410" x="35.2984" y="3.7684" smashed="yes" rot="R180"/>
-<element name="U1" library="ICM-20948-mpu" package="QFN40P300X300X105-25N" value="" x="71.1096" y="25.1752" smashed="yes"/>
+<element name="U1" library="ICM-20948-mpu" package="QFN40P300X300X105-25N" value="" x="71.1096" y="25.1752" smashed="yes">
+<attribute name="NAME" x="72.3796" y="26.9532" size="1.016" layer="25"/>
+</element>
 <element name="U20" library="glasses" package="MICROSD" value="MICROSD" x="61.0868" y="26.5816" smashed="yes">
-<attribute name="NAME" x="68.7068" y="13.8816" size="1.27" layer="21" rot="R90"/>
+<attribute name="NAME" x="67.9448" y="20.4348" size="1.016" layer="21" rot="R90"/>
 </element>
 <element name="C1" library="thanics-capacitor" package="C0402" value="1uF" x="61.0108" y="26.5176" smashed="yes" rot="MR180">
 <attribute name="NAME" x="59.8678" y="25.8826" size="0.762" layer="26" rot="MR180"/>
 <attribute name="RATING" value="10V" x="61.0108" y="26.5176" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U3" library="glasses" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:6091633/1" value="1.8" x="78.296" y="8.4244" smashed="yes" rot="R180">
-<attribute name="NAME" x="78.296" y="5.7808" size="1.27" layer="25" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="77.1276" y="11.2164" size="1.016" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="U4" library="glasses" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:6091633/1" value="3.3" x="21.9964" y="7.874" smashed="yes" rot="MR0">
-<attribute name="NAME" x="21.9964" y="10.5176" size="1.27" layer="26" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="20.0132" y="7.9248" size="0.762" layer="26" rot="MR270" align="bottom-center"/>
 </element>
 <element name="C2" library="thanics-capacitor" package="C0402" value="1uF" x="79.9592" y="10.7188" smashed="yes" rot="R180">
-<attribute name="NAME" x="81.1022" y="10.0838" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="78.0034" y="11.2522" size="0.762" layer="25" rot="R270"/>
 <attribute name="RATING" value="10V" x="79.9592" y="10.7188" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C3" library="thanics-capacitor" package="C0402" value="1uF" x="24.0792" y="10.0076" smashed="yes" rot="MR0">
@@ -1557,7 +1566,7 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="24.0792" y="10.0076" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C4" library="thanics-capacitor" package="C0402" value="1uF" x="78.4352" y="6.096" smashed="yes">
-<attribute name="NAME" x="77.2922" y="6.731" size="0.762" layer="25"/>
+<attribute name="NAME" x="76.2762" y="5.8166" size="0.762" layer="25"/>
 <attribute name="RATING" value="10V" x="78.4352" y="6.096" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C5" library="thanics-capacitor" package="C0402" value="1uF" x="21.8948" y="10.0584" smashed="yes" rot="MR180">
@@ -1565,30 +1574,27 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="21.8948" y="10.0584" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U5" library="glasses" package="SOTFL95P240X80-3" package3d_urn="urn:adsk.eagle:package:6092331/1" value="SSM3J338RSOT-23F" x="81.7692" y="10.9108" smashed="yes" rot="MR90">
-<attribute name="NAME" x="84.4289" y="10.9108" size="1.27" layer="26" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="83.7177" y="10.9616" size="1.27" layer="26" rot="MR90" align="bottom-center"/>
 </element>
 <element name="F1" library="thanics-resistor" package="R0603" value="SF-0603S200-2" x="81.6332" y="8.3576" smashed="yes" rot="MR0">
-<attribute name="NAME" x="83.0412" y="9.1386" size="0.762" layer="26" rot="MR0"/>
+<attribute name="NAME" x="84.362" y="8.0718" size="0.762" layer="26" rot="MR0"/>
 </element>
 <element name="U6" library="glasses" package="SOTFL95P240X80-3" package3d_urn="urn:adsk.eagle:package:6092331/1" value="SSM3J338RSOT-23F" x="80.7884" y="4.426" smashed="yes" rot="MR270">
 <attribute name="NAME" x="78.1287" y="4.426" size="1.27" layer="26" rot="MR270" align="bottom-center"/>
 </element>
 <element name="C6" library="thanics-capacitor" package="C0402" value="1uF" x="71.2512" y="7.2748" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.6162" y="6.1318" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="70.8002" y="5.4822" size="0.762" layer="25"/>
 <attribute name="RATING" value="10V" x="71.2512" y="7.2748" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1" value="TPB2,54" x="68.0824" y="2.5586" smashed="yes">
-<attribute name="NAME" x="66.8124" y="4.2096" size="1.27" layer="25" ratio="10"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="68.0824" y="2.5586" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="66.8124" y="1.1616" size="0.0254" layer="27"/>
 </element>
 <element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1" value="TPB2,54" x="71.3336" y="2.5434" smashed="yes">
-<attribute name="NAME" x="70.0636" y="4.1944" size="1.27" layer="25" ratio="10"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="71.3336" y="2.5434" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="70.0636" y="1.1464" size="0.0254" layer="27"/>
 </element>
 <element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1" value="TPB2,54" x="74.6356" y="2.2742" smashed="yes">
-<attribute name="NAME" x="73.3656" y="3.9252" size="1.27" layer="25" ratio="10"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="74.6356" y="2.2742" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="73.3656" y="0.8772" size="0.0254" layer="27"/>
 </element>
@@ -1597,32 +1603,32 @@ design rules under a new name.</description>
 </element>
 <element name="U10" library="attiny20" package="20M2" value="ATTINY20-MMH" x="73.9996" y="7.0892" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER_PART_NUMBER" value="ATTINY20MMH" x="73.9996" y="7.0892" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="71.7202" y="7.4142" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="NAME" x="72.3874" y="3.8702" size="1.27" layer="25" ratio="6" rot="SR0"/>
 <attribute name="VENDOR" value="Atmel" x="73.9996" y="7.0892" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R4" library="thanics-resistor" package="R0402" value="2.15k" x="74.7308" y="9.7386" smashed="yes">
-<attribute name="NAME" x="73.5878" y="10.3736" size="0.762" layer="25"/>
+<attribute name="NAME" x="76.4436" y="9.275" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="1%" x="74.7308" y="9.7386" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R5" library="thanics-resistor" package="R0402" value="1k" x="72.0812" y="10.8128" smashed="yes" rot="R180">
-<attribute name="NAME" x="73.2242" y="10.1778" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="70.997" y="12.225" size="0.762" layer="25"/>
 </element>
 <element name="R6" library="thanics-resistor" package="R0402" value="3.2k" x="74.7308" y="10.8252" smashed="yes">
-<attribute name="NAME" x="73.5878" y="11.4602" size="0.762" layer="25"/>
+<attribute name="NAME" x="74.3498" y="11.4602" size="0.762" layer="25"/>
 </element>
 <element name="R7" library="thanics-resistor" package="R0402" value="3.2k" x="72.0892" y="9.6032" smashed="yes">
-<attribute name="NAME" x="70.9462" y="10.2382" size="0.762" layer="25"/>
+<attribute name="NAME" x="70.997" y="11.4066" size="0.762" layer="25"/>
 </element>
 <element name="R2" library="thanics-resistor" package="R0402" value="10k" x="68.9946" y="4.5474" smashed="yes" rot="R180">
 <attribute name="NAME" x="70.1376" y="3.9124" size="0.762" layer="25" rot="R180"/>
 <attribute name="TOL" value="5%" x="68.9946" y="4.5474" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R3" library="thanics-resistor" package="R0402" value="10k" x="81.0088" y="6.7528" smashed="yes" rot="MR0">
-<attribute name="NAME" x="82.1518" y="7.3878" size="0.762" layer="26" rot="MR0"/>
+<attribute name="NAME" x="83.3202" y="6.321" size="0.762" layer="26" rot="MR0"/>
 <attribute name="TOL" value="5%" x="81.0088" y="6.7528" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C50" library="thanics-capacitor" package="C0805" value="22uF" x="61.3144" y="10.6438" smashed="yes" rot="R90">
-<attribute name="NAME" x="60.0868" y="9.4246" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="63.2872" y="11.1518" size="0.762" layer="25" rot="R90"/>
 <attribute name="RATING" value="16V" x="52.3144" y="10.6438" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J7" library="105450-0101" package="MOLEX_105450-0101" value="105450-0101" x="57.0196" y="3.8732" smashed="yes">
@@ -1631,29 +1637,29 @@ design rules under a new name.</description>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/molex-llc/1054500101/WM12856CT-ND/5843891?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="57.0196" y="-0.1268" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Molex" x="57.0196" y="-0.1268" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="1054500101" x="57.0196" y="-0.1268" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.761909375" y="-2.12973125" size="1.271859375" layer="25" rot="R90"/>
+<attribute name="NAME" x="52.17546875" y="8.740890625" size="1.271859375" layer="25"/>
 <attribute name="PACKAGE" value="None" x="57.0196" y="-0.1268" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F2" library="thanics-resistor" package="R0603" value="SF-0603S200-2" x="67.6756" y="18.6194" smashed="yes" rot="R90">
 <attribute name="NAME" x="66.8946" y="17.2114" size="0.762" layer="25" rot="R90"/>
 </element>
 <element name="C8" library="thanics-capacitor" package="C0603" value="10uF" x="73.585" y="16.2932" smashed="yes">
-<attribute name="NAME" x="72.177" y="17.0742" size="0.762" layer="25"/>
+<attribute name="NAME" x="73.193" y="17.0234" size="0.762" layer="25"/>
 <attribute name="RATING" value="10V" x="73.585" y="16.2932" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R1" library="thanics-resistor" package="R0402" value="56k" x="55.0912" y="10.5888" smashed="yes" rot="R180">
-<attribute name="NAME" x="56.2342" y="9.9538" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="53.8466" y="11.173" size="0.762" layer="25" rot="R180"/>
 <attribute name="TOL" value="5%" x="55.0912" y="10.5888" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R8" library="thanics-resistor" package="R0402" value="56k" x="59.1834" y="9.2426" smashed="yes">
-<attribute name="NAME" x="58.0404" y="9.8776" size="0.762" layer="25"/>
+<attribute name="NAME" x="56.872" y="8.8616" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="59.1834" y="9.2426" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U2" library="glasses" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:6091633/1" value="TPS613222A" x="73.693" y="19.1536" smashed="yes" rot="R270">
-<attribute name="NAME" x="73.5818" y="21.3456" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="NAME" x="74.3946" y="21.2948" size="1.016" layer="25" align="bottom-center"/>
 </element>
 <element name="L1" library="glasses" package="1008" value="4.7uH" x="76.8496" y="20.9854" smashed="yes" rot="R270">
-<attribute name="NAME" x="78.4496" y="21.9854" size="1.27" layer="21" rot="R270"/>
+<attribute name="NAME" x="78.5004" y="22.9506" size="1.27" layer="21" rot="R270"/>
 </element>
 <element name="C7" library="thanics-capacitor" package="C0805" value="22uF" x="27.0116" y="23.7768" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.7896" y="25.0468" size="0.762" layer="26" rot="MR0"/>
@@ -1664,7 +1670,7 @@ design rules under a new name.</description>
 <attribute name="RATING" value="16V" x="26.9888" y="21.6824" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R9" library="thanics-resistor" package="R0402" value="10k" x="28.9828" y="1.0604" smashed="yes" rot="MR180">
-<attribute name="NAME" x="27.8398" y="0.4254" size="0.762" layer="26" rot="MR180"/>
+<attribute name="NAME" x="28.3478" y="2.5082" size="0.762" layer="26" rot="MR180"/>
 <attribute name="TOL" value="5%" x="28.9828" y="1.0604" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R10" library="thanics-resistor" package="R0402" value="10k" x="32.4852" y="1.0168" smashed="yes" rot="MR0">
@@ -1672,40 +1678,41 @@ design rules under a new name.</description>
 <attribute name="TOL" value="5%" x="32.4852" y="1.0168" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R11" library="thanics-resistor" package="R0402" value="10k" x="84.4856" y="20.9564" smashed="yes" rot="R90">
-<attribute name="NAME" x="83.8506" y="19.8134" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="84.8666" y="22.201" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="84.4856" y="20.9564" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R12" library="thanics-resistor" package="R0402" value="5.1k" x="54.6812" y="12.2856" smashed="yes">
-<attribute name="NAME" x="53.2732" y="13.0666" size="0.762" layer="25"/>
+<attribute name="NAME" x="51.6476" y="11.949" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="54.6812" y="12.2856" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R13" library="thanics-resistor" package="R0402" value="5.1k" x="59.5776" y="12.2732" smashed="yes" rot="R270">
-<attribute name="NAME" x="60.3586" y="13.6812" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="59.1152" y="13.4702" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="59.5776" y="12.2732" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U12" library="glasses" package="UQFN10" value="NLAS2750" x="57.61" y="11.1492" smashed="yes" rot="R270">
-<attribute name="NAME" x="59.01" y="12.2492" size="1.27" layer="21" rot="R270"/>
+<attribute name="NAME" x="56.4832" y="12.3248" size="1.016" layer="21"/>
 </element>
 <element name="R15" library="thanics-resistor" package="R0402" value="10k" x="67.2628" y="13.486" smashed="yes" rot="R270">
-<attribute name="NAME" x="67.8978" y="14.629" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="65.7642" y="14.2734" size="0.762" layer="25" rot="R270"/>
 <attribute name="TOL" value="5%" x="67.2628" y="13.486" size="3" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U9" library="glasses" package="SOT-23_(TO-236AB)" value="NX3020NAK" x="77.9032" y="2.7884" smashed="yes">
+<attribute name="NAME" x="78.7456" y="1.0936" size="1.016" layer="21" rot="R180"/>
 <attribute name="PART#" value="NX3020NAK" x="77.9032" y="2.7884" size="3" layer="27" display="off"/>
 </element>
 <element name="U13" library="glasses" package="SOT-23_(TO-236AB)" value="NX3020NAK" x="69.4996" y="13.5904" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.2616" y="11.8124" size="1.016" layer="21" rot="R180"/>
+<attribute name="NAME" x="69.7028" y="15.978" size="0.762" layer="21" rot="R180"/>
 <attribute name="PART#" value="NX3020NAK" x="69.4996" y="13.5904" size="3" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U14" library="glasses" package="SOTFL95P240X80-3" package3d_urn="urn:adsk.eagle:package:6092331/1" value="SSM3J338RSOT-23F" x="77.0708" y="12.8916" smashed="yes" rot="R270">
-<attribute name="NAME" x="79.7305" y="12.8916" size="1.27" layer="25" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="75.0061" y="14.8728" size="0.762" layer="25" rot="R270" align="bottom-center"/>
 </element>
 <element name="U15" library="glasses" package="SOT-23_(TO-236AB)" value="NX3020NAK" x="77.0684" y="17.583" smashed="yes" rot="R90">
-<attribute name="NAME" x="77.8304" y="15.805" size="1.016" layer="21" rot="R180"/>
+<attribute name="NAME" x="78.024" y="15.9958" size="1.016" layer="21"/>
 <attribute name="PART#" value="NX3020NAK" x="77.0684" y="17.583" size="3" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R16" library="thanics-resistor" package="R0402" value="10k" x="77.086" y="15.2412" smashed="yes" rot="R180">
-<attribute name="NAME" x="78.3366" y="14.8578" size="0.762" layer="25"/>
+<attribute name="NAME" x="78.2858" y="14.9086" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="77.086" y="15.2412" size="3" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R17" library="thanics-resistor" package="R0402" value="10k" x="33.216" y="20.1452" smashed="yes" rot="MR90">
@@ -1713,22 +1720,21 @@ design rules under a new name.</description>
 <attribute name="TOL" value="5%" x="33.216" y="20.1452" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="U16" library="glasses" package="SOTFL95P240X80-3" package3d_urn="urn:adsk.eagle:package:6092331/1" value="SSM3J338RSOT-23F" x="70.24" y="18.2162" smashed="yes" rot="R180">
-<attribute name="NAME" x="70.24" y="15.5565" size="1.27" layer="25" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="71.3904" y="19.9527" size="0.762" layer="25" align="bottom-center"/>
 </element>
 <element name="R19" library="thanics-resistor" package="R0402" value="10k" x="69.5832" y="20.504" smashed="yes">
-<attribute name="NAME" x="70.8278" y="20.0722" size="0.762" layer="25"/>
+<attribute name="NAME" x="68.5926" y="21.139" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="69.5832" y="20.504" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U17" library="glasses" package="SOT-23_(TO-236AB)" value="NX3020NAK" x="73.022" y="13.4748" smashed="yes" rot="R270">
-<attribute name="NAME" x="72.26" y="15.2528" size="1.016" layer="21"/>
 <attribute name="PART#" value="NX3020NAK" x="73.022" y="13.4748" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R18" library="thanics-resistor" package="R0402" value="10k" x="70.9548" y="15.9772" smashed="yes">
-<attribute name="NAME" x="69.685" y="16.357" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="72.1234" y="15.2902" size="0.762" layer="25" rot="R180"/>
 <attribute name="TOL" value="5%" x="70.9548" y="15.9772" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U18" library="glasses" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:6091633/1" value="2.8" x="23.9636" y="3.3436" smashed="yes" rot="MR270">
-<attribute name="NAME" x="21.32" y="3.3436" size="1.27" layer="26" rot="MR270" align="bottom-center"/>
+<attribute name="NAME" x="23.5296" y="6.334" size="0.762" layer="26" rot="MR180" align="bottom-center"/>
 </element>
 <element name="C10" library="thanics-capacitor" package="C0402" value="1uF" x="26.0428" y="3.518" smashed="yes" rot="MR270">
 <attribute name="NAME" x="25.4078" y="4.661" size="0.762" layer="26" rot="MR270"/>
@@ -1739,21 +1745,21 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="24.0156" y="0.9536" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U19" library="glasses" package="SOT95P275X130-5" package3d_urn="urn:adsk.eagle:package:6381607/1" value="TCR2EF15SOT-25" x="20.4728" y="2.734" smashed="yes" rot="MR270">
-<attribute name="NAME" x="17.8392" y="2.734" size="1.27" layer="26" rot="MR270" align="bottom-center"/>
+<attribute name="NAME" x="18.7536" y="4.4104" size="1.016" layer="26" rot="MR270" align="bottom-center"/>
 </element>
 <element name="C12" library="thanics-capacitor" package="C0402" value="1uF" x="21.3488" y="5.642" smashed="yes" rot="MR0">
-<attribute name="NAME" x="22.4918" y="6.277" size="0.762" layer="26" rot="MR0"/>
+<attribute name="NAME" x="20.0882" y="6.439" size="0.762" layer="26" rot="MR270"/>
 <attribute name="RATING" value="10V" x="21.3488" y="5.642" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C13" library="thanics-capacitor" package="C0402" value="1uF" x="18.1836" y="1.9684" smashed="yes" rot="MR90">
-<attribute name="NAME" x="18.8186" y="0.8254" size="0.762" layer="26" rot="MR90"/>
+<attribute name="NAME" x="16.7866" y="1.181" size="0.762" layer="26" rot="MR90"/>
 <attribute name="RATING" value="10V" x="18.1836" y="1.9684" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="J2" library="thanics-connector" package="DF30FC-30DS-0.4V" value="DF30FC-30DS-0.4V" x="2.6304" y="4.8824" smashed="yes" rot="MR270">
 <attribute name="NAME" x="4.6304" y="-0.7176" size="1.27" layer="22" rot="MR0"/>
 </element>
 <element name="J1" library="thanics-connector" package="BM10NB(0.8)-16DS-0.4V(51)" value="BM10NB(0.8)-16DS-0.4V(51)" x="6.2596" y="18.5108" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.859596875" y="21.510803125" size="1.27" layer="21"/>
+<attribute name="NAME" x="5.316796875" y="21.510803125" size="1.27" layer="21"/>
 </element>
 <element name="R20" library="thanics-resistor" package="R0402" value="10k" x="21.4304" y="16.1964" smashed="yes" rot="MR0">
 <attribute name="NAME" x="24.8086" y="17.8982" size="0.762" layer="26" rot="MR0"/>
@@ -1764,11 +1770,11 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="4.3032" y="19.108" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C15" library="thanics-capacitor" package="C0402" value="1uF" x="8.7168" y="19.8048" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.3518" y="20.9478" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="8.285" y="22.7258" size="0.762" layer="25" rot="R270"/>
 <attribute name="RATING" value="10V" x="8.7168" y="19.8048" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C18" library="thanics-capacitor" package="C0402" value="100nF" x="73.9012" y="25.3056" smashed="yes" rot="R90">
-<attribute name="NAME" x="73.2662" y="24.1626" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="75.2982" y="25.077" size="0.762" layer="25" rot="R90"/>
 <attribute name="RATING" value="10V" x="73.9012" y="25.3056" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C19" library="thanics-capacitor" package="C0402" value="100nF" x="68.8268" y="23.5136" smashed="yes" rot="R180">
@@ -1776,15 +1782,15 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="68.8268" y="23.5136" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C20" library="thanics-capacitor" package="C0402" value="100nF" x="72.3464" y="22.302" smashed="yes">
-<attribute name="NAME" x="71.2034" y="22.937" size="0.762" layer="25"/>
+<attribute name="NAME" x="73.5402" y="22.5814" size="0.762" layer="25"/>
 <attribute name="RATING" value="10V" x="72.3464" y="22.302" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R21" library="thanics-resistor" package="R0402" value="5.1k" x="47.9592" y="21.1856" smashed="yes" rot="MR180">
-<attribute name="NAME" x="46.5512" y="20.4046" size="0.762" layer="26" rot="MR180"/>
+<attribute name="NAME" x="49.142" y="21.573" size="0.762" layer="26" rot="MR180"/>
 <attribute name="TOL" value="5%" x="47.9592" y="21.1856" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R22" library="thanics-resistor" package="R0402" value="5.1k" x="47.9084" y="19.1056" smashed="yes" rot="MR180">
-<attribute name="NAME" x="46.5004" y="18.3246" size="0.762" layer="26" rot="MR180"/>
+<attribute name="NAME" x="49.1928" y="19.493" size="0.762" layer="26" rot="MR180"/>
 <attribute name="TOL" value="5%" x="47.9084" y="19.1056" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R24" library="thanics-resistor" package="R0402" value="10k" x="26.5104" y="0.8976" smashed="yes" rot="MR0">
@@ -1792,42 +1798,42 @@ design rules under a new name.</description>
 <attribute name="TOL" value="5%" x="26.5104" y="0.8976" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R23" library="thanics-resistor" package="R0402" value="10k" x="67.2364" y="15.7408" smashed="yes" rot="R270">
-<attribute name="NAME" x="67.8714" y="16.8838" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="65.5854" y="16.7822" size="0.762" layer="25" rot="R270"/>
 <attribute name="TOL" value="5%" x="67.2364" y="15.7408" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U21" library="glasses" package="DFN10-3X3" package3d_urn="urn:adsk.eagle:package:16061/1" value="MCP73833" x="83.676" y="8.1736" smashed="yes">
-<attribute name="NAME" x="82.271" y="10.0786" size="1.27" layer="25"/>
+<attribute name="NAME" x="85.8214" y="9.7278" size="1.016" layer="25" rot="R270"/>
 </element>
 <element name="R26" library="thanics-resistor" package="R0402" value="10k" x="85.7576" y="10.4416" smashed="yes">
-<attribute name="NAME" x="85.021" y="11.2798" size="0.762" layer="25"/>
+<attribute name="NAME" x="84.9194" y="11.1274" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="85.7576" y="10.4416" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R27" library="thanics-resistor" package="R0402" value="10k" x="80.4888" y="5.53" smashed="yes" rot="R270">
-<attribute name="NAME" x="81.1238" y="6.673" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="80.8266" y="2.471" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="80.4888" y="5.53" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R28" library="thanics-resistor" package="R0402" value="10k" x="81.9306" y="5.53" smashed="yes" rot="R270">
-<attribute name="NAME" x="82.5656" y="6.673" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="81.0586" y="3.47" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="81.9306" y="5.53" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C22" library="thanics-capacitor" package="C0603" value="10uF" x="83.054" y="10.5028" smashed="yes" rot="R180">
-<attribute name="NAME" x="84.462" y="9.7218" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="83.446" y="12.0586" size="0.762" layer="25" rot="R180"/>
 <attribute name="RATING" value="10V" x="83.054" y="10.5028" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C23" library="thanics-capacitor" package="C0402" value="1uF" x="80.8296" y="8.7812" smashed="yes" rot="R270">
-<attribute name="NAME" x="81.4646" y="9.9242" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="79.7886" y="6.8902" size="0.762" layer="25"/>
 <attribute name="RATING" value="10V" x="80.8296" y="8.7812" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R29" library="thanics-resistor" package="R0402" value="2k" x="83.5478" y="5.8428" smashed="yes">
-<attribute name="NAME" x="82.4048" y="6.4778" size="0.762" layer="25"/>
+<attribute name="NAME" x="82.4048" y="4.4966" size="0.762" layer="25"/>
 <attribute name="TOL" value="1%" x="83.5478" y="5.8428" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R30" library="thanics-resistor" package="R0402" value="5.1k" x="42.5196" y="27.6352" smashed="yes" rot="MR90">
-<attribute name="NAME" x="43.3006" y="26.2272" size="0.762" layer="26" rot="MR90"/>
+<attribute name="NAME" x="42.1322" y="24.6524" size="0.762" layer="26" rot="MR90"/>
 <attribute name="TOL" value="5%" x="42.5196" y="27.6352" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R31" library="thanics-resistor" package="R0402" value="5.1k" x="43.7388" y="27.6352" smashed="yes" rot="MR90">
-<attribute name="NAME" x="44.5198" y="26.2272" size="0.762" layer="26" rot="MR90"/>
+<attribute name="NAME" x="43.3514" y="24.7032" size="0.762" layer="26" rot="MR90"/>
 <attribute name="TOL" value="5%" x="43.7388" y="27.6352" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R32" library="thanics-resistor" package="R0402" value="5.1k" x="39.6748" y="2.4384" smashed="yes" rot="MR0">
@@ -1835,11 +1841,11 @@ design rules under a new name.</description>
 <attribute name="TOL" value="5%" x="39.6748" y="2.4384" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R33" library="thanics-resistor" package="R0402" value="5.1k" x="38.608" y="1.4732" smashed="yes" rot="MR0">
-<attribute name="NAME" x="40.016" y="2.2542" size="0.762" layer="26" rot="MR0"/>
+<attribute name="NAME" x="37.3744" y="1.1366" size="0.762" layer="26" rot="MR0"/>
 <attribute name="TOL" value="5%" x="38.608" y="1.4732" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="J3" library="thanics-connector" package="S2B-XH-A(LF)(SN)" value="S2B-XH-A(LF)(SN)" x="81.7024" y="15.3332" smashed="yes" rot="R180">
-<attribute name="NAME" x="90.5924" y="10.2532" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="80.3308" y="20.6164" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="R34" library="thanics-resistor" package="R0402" value="470R" x="30.1244" y="10.2108" smashed="yes" rot="MR180">
 <attribute name="NAME" x="28.9814" y="9.5758" size="0.762" layer="26" rot="MR180"/>
@@ -1878,25 +1884,25 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="6.1468" y="3.302" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C31" library="thanics-capacitor" package="C0402" value="1uF" x="3.2004" y="8.636" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.5654" y="7.493" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="2.5146" y="8.1534" size="0.762" layer="25" rot="R90"/>
 <attribute name="RATING" value="10V" x="3.2004" y="8.636" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U22" library="glasses" package="12MLP" value="FXMA2104UMX" x="66.1416" y="6.096" smashed="yes" rot="R90">
-<attribute name="NAME" x="64.7416" y="4.896" size="1" layer="21" rot="R90"/>
+<attribute name="NAME" x="65.3988" y="3.686" size="0.762" layer="21"/>
 </element>
 <element name="U23" library="glasses" package="SOT-23_(TO-236AB)" value="NX3020NAK" x="64.5922" y="2.7686" smashed="yes" rot="R180">
+<attribute name="NAME" x="63.4746" y="0.0762" size="1.016" layer="21"/>
 <attribute name="PART#" value="NX3020NAK" x="64.5922" y="2.7686" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R37" library="thanics-resistor" package="R0402" value="10k" x="66.3956" y="7.9502" smashed="yes">
-<attribute name="NAME" x="65.2526" y="8.5852" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="66.3956" y="7.9502" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R38" library="thanics-resistor" package="R0402" value="5.1k" x="69.1896" y="6.9088" smashed="yes">
-<attribute name="NAME" x="68.0466" y="7.5438" size="0.762" layer="25"/>
+<attribute name="NAME" x="68.1482" y="6.0706" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="69.1896" y="6.9088" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R40" library="thanics-resistor" package="R0402" value="5.1k" x="68.9356" y="5.6896" smashed="yes">
-<attribute name="NAME" x="67.7926" y="6.3246" size="0.762" layer="25"/>
+<attribute name="NAME" x="70.1802" y="4.699" size="0.762" layer="25"/>
 <attribute name="TOL" value="5%" x="68.9356" y="5.6896" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R41" library="thanics-resistor" package="R0402" value="10k" x="69.1896" y="8.128" smashed="yes">
@@ -1904,34 +1910,32 @@ design rules under a new name.</description>
 <attribute name="TOL" value="5%" x="69.1896" y="8.128" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R42" library="thanics-resistor" package="R0402" value="10k" x="63.754" y="6.0452" smashed="yes" rot="R180">
-<attribute name="NAME" x="64.897" y="5.4102" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="64.6938" y="5.4102" size="0.762" layer="25" rot="R180"/>
 <attribute name="TOL" value="5%" x="63.754" y="6.0452" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R43" library="thanics-resistor" package="R0402" value="10k" x="63.9064" y="7.9502" smashed="yes" rot="R180">
-<attribute name="NAME" x="65.0494" y="7.3152" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="64.7446" y="7.3152" size="0.762" layer="25" rot="R180"/>
 <attribute name="TOL" value="5%" x="63.9064" y="7.9502" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U24" library="glasses" package="12MLP" value="FXMA2104UMX" x="66.6496" y="9.8552" smashed="yes" rot="R90">
-<attribute name="NAME" x="65.2496" y="8.6552" size="1" layer="21" rot="R90"/>
+<attribute name="NAME" x="65.0972" y="10.9412" size="1" layer="21" rot="R90"/>
 </element>
 <element name="R44" library="thanics-resistor" package="R0402" value="10k" x="66.3448" y="11.7856" smashed="yes">
-<attribute name="NAME" x="65.2018" y="12.4206" size="0.762" layer="25"/>
+<attribute name="NAME" x="65.8114" y="12.4714" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="63.1444" y="8.8392" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R48" library="thanics-resistor" package="R0402" value="10k" x="64.1096" y="9.398" smashed="yes" rot="R180">
-<attribute name="NAME" x="65.2526" y="8.763" size="0.762" layer="25" rot="R180"/>
+<attribute name="NAME" x="64.5922" y="10.8458" size="0.762" layer="25" rot="R180"/>
 <attribute name="TOL" value="5%" x="69.596" y="20.574" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R45" library="thanics-resistor" package="R0402" value="10k" x="68.6308" y="10.7442" smashed="yes" rot="R90">
-<attribute name="NAME" x="67.9958" y="9.6012" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="68.6308" y="10.7442" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R46" library="thanics-resistor" package="R0402" value="10k" x="69.977" y="10.7442" smashed="yes" rot="R90">
-<attribute name="NAME" x="69.342" y="9.6012" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="69.977" y="10.7442" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J4" library="thanics-connector" package="GRPB042MWCN-RC" value="GRPB042MWCN-RC" x="1.8288" y="24.6888" smashed="yes" rot="MR90">
-<attribute name="NAME" x="3.7084" y="21.5392" size="1.016" layer="21" rot="R180"/>
+<attribute name="NAME" x="3.6576" y="26.8732" size="1.016" layer="21" rot="R270"/>
 </element>
 <element name="U25" library="glasses" package="12MLP" value="FXMA2104UMX" x="5.842" y="22.1488" smashed="yes" rot="MR90">
 <attribute name="NAME" x="7.242" y="20.9488" size="1" layer="22" rot="MR90"/>
@@ -1945,14 +1949,14 @@ design rules under a new name.</description>
 <attribute name="TOL" value="5%" x="7.5692" y="23.114" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R52" library="thanics-resistor" package="R0402" value="10k" x="81.9404" y="20.9804" smashed="yes" rot="R90">
-<attribute name="NAME" x="81.3054" y="19.8374" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="82.3214" y="22.2758" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="81.9404" y="20.9804" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U7" library="glasses" package="QFP50P1200X1200X120-65T300" package3d_urn="urn:adsk.eagle:package:6826436/1" value="SN65DSI83-Q1S-PQFP-G64" x="15.0368" y="21.1836" smashed="yes" rot="MR270">
 <attribute name="NAME" x="7.9441" y="21.1836" size="1.27" layer="26" rot="MR270" align="bottom-center"/>
 </element>
 <element name="U11" library="glasses" package="QFN50P700X700X100-49T515" package3d_urn="urn:adsk.eagle:package:6305932/1" value="SN65LVDS822VQFN48" x="15.24" y="10.0584" smashed="yes" rot="MR90">
-<attribute name="NAME" x="19.7601" y="10.0584" size="1.27" layer="26" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="15.1892" y="4.7741" size="1.27" layer="26" rot="MR0" align="bottom-center"/>
 </element>
 <element name="C16" library="thanics-capacitor" package="C0402" value="1uF" x="7.1628" y="26.4668" smashed="yes" rot="MR90">
 <attribute name="NAME" x="7.7978" y="25.3238" size="0.762" layer="26" rot="MR90"/>
@@ -1963,11 +1967,11 @@ design rules under a new name.</description>
 <attribute name="RATING" value="10V" x="22.7584" y="17.1196" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R14" library="thanics-resistor" package="R0402" value="10k" x="8.0772" y="26.5684" smashed="yes" rot="R90">
-<attribute name="NAME" x="7.4422" y="25.4254" size="0.762" layer="25" rot="R90"/>
+<attribute name="NAME" x="8.509" y="23.4442" size="0.762" layer="25" rot="R90"/>
 <attribute name="TOL" value="5%" x="8.0772" y="26.5684" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C21" library="thanics-capacitor" package="C0402" value="1uF" x="6.8072" y="26.5684" smashed="yes" rot="R270">
-<attribute name="NAME" x="7.4422" y="27.7114" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="5.3594" y="27.559" size="0.762" layer="25" rot="R270"/>
 <attribute name="RATING" value="10V" x="6.8072" y="26.5684" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R25" library="thanics-resistor" package="R0402" value="10k" x="8.382" y="26.4668" smashed="yes" rot="MR270">
@@ -1986,11 +1990,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="41.3112" y="7.3124" size="1" layer="22" rot="MR90"/>
 </element>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03/90" package3d_urn="urn:adsk.eagle:package:22459/2" value="" x="47.9552" y="31.8516" smashed="yes" rot="MR0">
-<attribute name="NAME" x="52.4002" y="28.0416" size="1.27" layer="26" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="42.2402" y="28.0416" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="J6" library="thanics-connector" package="FH26W-39S-0.3SHW" value="FH26W-39S-0.3SHW" x="5.2832" y="7.5184" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.8832" y="12.9184" size="1" layer="21" rot="R270"/>
+<attribute name="NAME" x="5.6236" y="14.4204" size="1" layer="21"/>
 </element>
 <element name="C32" library="thanics-capacitor" package="C0402" value="100nF" x="8.2296" y="14.2748" smashed="yes">
 <attribute name="NAME" x="7.0866" y="14.9098" size="0.762" layer="25"/>
@@ -2024,6 +2027,18 @@ design rules under a new name.</description>
 <element name="R50" library="thanics-resistor" package="R0402" value="10k" x="6.35" y="13.8684" smashed="yes" rot="MR90">
 <attribute name="NAME" x="6.985" y="12.7254" size="0.762" layer="26" rot="MR90"/>
 <attribute name="TOL" value="5%" x="6.35" y="13.8684" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="U27" library="glasses" package="SOT-23_(TO-236AB)" value="NX3020NAK" x="-2.6924" y="18.9992" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-1.9304" y="20.7772" size="1.016" layer="22" rot="MR0"/>
+<attribute name="PART#" value="NX3020NAK" x="-2.6924" y="18.9992" size="0.762" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="R51" library="thanics-resistor" package="R0402" value="8R" x="-6.5532" y="-9.2964" smashed="yes">
+<attribute name="NAME" x="-7.6962" y="-8.6614" size="0.762" layer="25"/>
+<attribute name="TOL" value="5%" x="-6.5532" y="-9.2964" size="0.762" layer="27" display="off"/>
+</element>
+<element name="R54" library="thanics-resistor" package="R0402" value="10k" x="-6.5532" y="-12.0904" smashed="yes">
+<attribute name="NAME" x="-7.6962" y="-11.4554" size="0.762" layer="25"/>
+<attribute name="TOL" value="5%" x="-6.5532" y="-12.0904" size="0.762" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2666,14 +2681,14 @@ design rules under a new name.</description>
 <wire x1="5.642" y1="22.9173" x2="5.642" y2="23.314" width="0.1524" layer="16"/>
 <wire x1="5.642" y1="23.314" x2="5.3848" y2="23.5712" width="0.1524" layer="16"/>
 <via x="19.4056" y="20.4978" extent="1-16" drill="0.3048"/>
-<via x="16.3068" y="21.1074" extent="1-16" drill="0.3048"/>
-<via x="16.3068" y="21.9202" extent="1-16" drill="0.3048"/>
-<via x="15.4432" y="22.225" extent="1-16" drill="0.3048"/>
-<via x="14.478" y="22.225" extent="1-16" drill="0.3048"/>
-<via x="14.0208" y="21.463" extent="1-16" drill="0.3048"/>
-<via x="14.0208" y="20.701" extent="1-16" drill="0.3048"/>
-<via x="14.8336" y="20.3454" extent="1-16" drill="0.3048"/>
-<via x="15.6972" y="20.3962" extent="1-16" drill="0.3048"/>
+<via x="15.7988" y="21.2598" extent="1-16" drill="0.3048"/>
+<via x="15.7988" y="22.0218" extent="1-16" drill="0.3048"/>
+<via x="14.986" y="22.0218" extent="1-16" drill="0.3048"/>
+<via x="14.1732" y="22.0218" extent="1-16" drill="0.3048"/>
+<via x="14.1732" y="21.2598" extent="1-16" drill="0.3048"/>
+<via x="14.986" y="21.2598" extent="1-16" drill="0.3048"/>
+<via x="14.1732" y="20.447" extent="1-16" drill="0.3048"/>
+<via x="14.986" y="20.447" extent="1-16" drill="0.3048"/>
 <wire x1="8.1382" y1="19.7494875" x2="8.2721125" y2="19.8834" width="0.1524" layer="1"/>
 <wire x1="8.2721125" y1="19.8834" x2="8.2954" y2="19.8834" width="0.1524" layer="1"/>
 <wire x1="8.2954" y1="19.8834" x2="8.7168" y2="20.3048" width="0.1524" layer="1"/>
@@ -2902,6 +2917,20 @@ design rules under a new name.</description>
 <wire x1="23.2584" y1="17.1196" x2="23.2584" y2="17.7118" width="0.1524" layer="16"/>
 <wire x1="23.2584" y1="17.7118" x2="23.0124" y2="17.9578" width="0.1524" layer="16"/>
 <via x="44.958" y="5.5626" extent="1-16" drill="0.3048"/>
+<via x="15.7988" y="20.447" extent="1-16" drill="0.3048"/>
+<via x="16.256" y="10.2362" extent="1-16" drill="0.3048"/>
+<via x="16.256" y="10.9982" extent="1-16" drill="0.3048"/>
+<via x="15.4432" y="10.9982" extent="1-16" drill="0.3048"/>
+<via x="14.6304" y="10.9982" extent="1-16" drill="0.3048"/>
+<via x="14.6304" y="10.2362" extent="1-16" drill="0.3048"/>
+<via x="15.4432" y="10.2362" extent="1-16" drill="0.3048"/>
+<via x="14.6304" y="9.4234" extent="1-16" drill="0.3048"/>
+<via x="15.4432" y="9.4234" extent="1-16" drill="0.3048"/>
+<via x="16.256" y="9.4234" extent="1-16" drill="0.3048"/>
+<contactref element="R54" pad="1"/>
+<contactref element="U27" pad="S"/>
+<wire x1="4.7104" y1="2.4824" x2="-7.0532" y2="-12.0904" width="0" layer="19" extent="1-16"/>
+<wire x1="-3.6924" y1="19.9492" x2="3.4036" y2="18.9738" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VREG_L11_SDC">
 <contactref element="U20" pad="4"/>
@@ -3776,7 +3805,6 @@ design rules under a new name.</description>
 <via x="69.122490625" y="3.978709375" extent="1-16" drill="0.3048"/>
 <wire x1="69.122490625" y1="3.978709375" x2="69.4946" y2="4.35081875" width="0.1524" layer="1"/>
 <wire x1="69.4946" y1="4.35081875" x2="69.4946" y2="4.5474" width="0.1524" layer="1"/>
-<wire x1="69.4946" y1="4.5474" x2="69.046171875" y2="4.995828125" width="0.1524" layer="1"/>
 <contactref element="U26" pad="1"/>
 <contactref element="D1" pad="A"/>
 <wire x1="45.7708" y1="10.5888" x2="54.5912" y2="10.5888" width="0.1524" layer="1"/>
@@ -6144,8 +6172,10 @@ design rules under a new name.</description>
 <wire x1="13.1064" y1="4.3688" x2="11.1568" y2="6.3184" width="0.1524" layer="1"/>
 <wire x1="15.56910625" y1="4.3688" x2="13.1064" y2="4.3688" width="0.1524" layer="1"/>
 <wire x1="16.6116" y1="5.41129375" x2="15.56910625" y2="4.3688" width="0.1524" layer="1"/>
-<wire x1="19.558" y1="12.2936" x2="16.6116" y2="9.3472" width="0.1524" layer="1"/>
-<wire x1="16.6116" y1="9.3472" x2="16.6116" y2="5.41129375" width="0.1524" layer="1"/>
+<wire x1="16.6116" y1="8.5852" x2="16.6116" y2="5.41129375" width="0.1524" layer="1"/>
+<wire x1="16.6116" y1="8.5852" x2="17.145" y2="9.1186" width="0.1524" layer="1"/>
+<wire x1="17.145" y1="9.1186" x2="17.145" y2="9.8806" width="0.1524" layer="1"/>
+<wire x1="17.145" y1="9.8806" x2="19.558" y2="12.2936" width="0.1524" layer="1"/>
 </signal>
 <signal name="B0">
 <contactref element="J6" pad="38"/>
@@ -6243,6 +6273,18 @@ design rules under a new name.</description>
 <contactref element="C35" pad="2"/>
 <contactref element="C36" pad="1"/>
 <wire x1="2.024" y1="10.3632" x2="3.1576" y2="10.3632" width="0.1524" layer="16"/>
+</signal>
+<signal name="BACKLIGHT_PWM">
+<contactref element="U$1" pad="J2.6"/>
+<contactref element="U27" pad="G"/>
+<contactref element="R54" pad="2"/>
+<wire x1="-3.6924" y1="18.0492" x2="27.2984" y2="5.2684" width="0" layer="19" extent="1-16"/>
+<wire x1="-6.0532" y1="-12.0904" x2="-3.6924" y2="18.0492" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="N$41">
+<contactref element="U27" pad="D"/>
+<contactref element="R51" pad="1"/>
+<wire x1="-7.0532" y1="-9.2964" x2="-1.6924" y2="18.9992" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

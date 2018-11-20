@@ -206,6 +206,7 @@
 <smd name="22" x="-0.2" y="1.55" dx="0.7" dy="0.2" layer="1" roundness="100" rot="R270"/>
 <smd name="23" x="-0.6" y="1.55" dx="0.7" dy="0.2" layer="1" roundness="100" rot="R270"/>
 <smd name="24" x="-1" y="1.55" dx="0.7" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<text x="-1.27" y="2.54" size="1.016" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2858,6 +2859,25 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RMCF0402JT8R20" prefix="R">
+<gates>
+<gate name="G$1" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TOL" value="5%"/>
+<attribute name="VALUE" value="8R"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="testpad" urn="urn:adsk.eagle:library:385">
@@ -4409,6 +4429,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="6.6" y1="1.8" x2="6.6" y2="0.9" width="0.127" layer="21"/>
 <text x="-5.4" y="3.6" size="1" layer="21">&gt;NAME</text>
 </package>
+<package name="0787324001-CONTACTS">
+<smd name="2" x="-1" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+<smd name="1" x="-2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+<smd name="4" x="2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+<smd name="3" x="1" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DF30FC-30DS-0.4V">
@@ -4678,6 +4704,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </gates>
 <devices>
 <device name="" package="0787324001">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CONTACTS" package="0787324001-CONTACTS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5159,6 +5196,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R50" library="thanics-resistor" deviceset="RC0402JR-0710KL" device="" value="10k"/>
 <part name="U$48" library="supply1" deviceset="+1V8" device=""/>
+<part name="U27" library="glasses" deviceset="NX3020NAK" device=""/>
+<part name="R51" library="thanics-resistor" deviceset="RMCF0402JT8R20" device="" value="8R"/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND62" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R54" library="thanics-resistor" deviceset="RC0402JR-0710KL" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6204,6 +6247,27 @@ S4 - OFF</text>
 <instance part="U$48" gate="G$1" x="114.3" y="2.54" smashed="yes">
 <attribute name="VALUE" x="111.76" y="0" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U27" gate="A" x="93.98" y="-104.14" smashed="yes">
+<attribute name="NAME" x="99.06" y="-104.14" size="1.778" layer="95" font="vector"/>
+<attribute name="PART#" x="99.06" y="-106.68" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="R51" gate="G$1" x="93.98" y="-91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.4814" y="-95.25" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="97.282" y="-95.25" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V7" gate="G$1" x="93.98" y="-76.2" smashed="yes">
+<attribute name="VALUE" x="91.44" y="-81.28" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND62" gate="1" x="93.98" y="-114.3" smashed="yes">
+<attribute name="VALUE" x="91.44" y="-116.84" size="1.778" layer="96"/>
+</instance>
+<instance part="GND77" gate="1" x="83.82" y="-124.46" smashed="yes">
+<attribute name="VALUE" x="81.28" y="-127" size="1.778" layer="96"/>
+</instance>
+<instance part="R54" gate="G$1" x="83.82" y="-114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="82.3214" y="-118.11" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="87.122" y="-118.11" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7100,6 +7164,16 @@ S4 - OFF</text>
 <wire x1="-398.78" y1="-81.28" x2="-396.24" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-396.24" y1="-81.28" x2="-396.24" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-396.24" y="-86.36"/>
+</segment>
+<segment>
+<pinref part="GND77" gate="1" pin="GND"/>
+<pinref part="R54" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="-121.92" x2="83.82" y2="-119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND62" gate="1" pin="GND"/>
+<pinref part="U27" gate="A" pin="S"/>
+<wire x1="93.98" y1="-111.76" x2="93.98" y2="-108.458" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREG_L11_SDC" class="0">
@@ -9294,6 +9368,29 @@ S4 - OFF</text>
 <pinref part="C35" gate="G$1" pin="2"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="-391.16" y1="-83.058" x2="-391.16" y2="-87.376" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BACKLIGHT_PWM" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PM_MPP4"/>
+<wire x1="-220.98" y1="-144.78" x2="-246.38" y2="-144.78" width="0.1524" layer="91"/>
+<label x="-243.84" y="-144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U27" gate="A" pin="G"/>
+<wire x1="88.9" y1="-106.68" x2="83.82" y2="-106.68" width="0.1524" layer="91"/>
+<label x="68.58" y="-106.68" size="1.778" layer="95"/>
+<pinref part="R54" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="-106.68" x2="66.04" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-109.22" x2="83.82" y2="-106.68" width="0.1524" layer="91"/>
+<junction x="83.82" y="-106.68"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U27" gate="A" pin="D"/>
+<pinref part="R51" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-99.822" x2="93.98" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

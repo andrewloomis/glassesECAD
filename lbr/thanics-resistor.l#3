@@ -275,7 +275,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RMCF0603JT5K10" prefix="R" uservalue="yes">
+<deviceset name="RC0402JR-075K1L" prefix="R" uservalue="yes">
 <gates>
 <gate name="A" symbol="R-US" x="0" y="0"/>
 </gates>
