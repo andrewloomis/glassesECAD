@@ -475,6 +475,12 @@
 <wire x1="6.6" y1="1.8" x2="6.6" y2="0.9" width="0.127" layer="21"/>
 <text x="-5.4" y="3.6" size="1" layer="21">&gt;NAME</text>
 </package>
+<package name="0787324001-CONTACTS">
+<smd name="2" x="-1" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+<smd name="1" x="-2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+<smd name="4" x="2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+<smd name="3" x="1" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SFV30R-1STE1HLF">
@@ -957,6 +963,17 @@
 </gates>
 <devices>
 <device name="" package="0787324001">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CONTACTS" package="0787324001-CONTACTS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

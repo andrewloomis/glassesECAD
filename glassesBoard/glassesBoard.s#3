@@ -8377,11 +8377,6 @@ S4 - OFF</text>
 </net>
 <net name="DSI_EN" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="GPIO118"/>
-<wire x1="-160.02" y1="-218.44" x2="-132.08" y2="-218.44" width="0.1524" layer="91"/>
-<label x="-149.86" y="-218.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="EN"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="-50.8" x2="-86.36" y2="-50.8" width="0.1524" layer="91"/>
@@ -8390,6 +8385,11 @@ S4 - OFF</text>
 <wire x1="-86.36" y1="-54.356" x2="-86.36" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-86.36" y="-50.8"/>
 <label x="-83.82" y="-50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO8"/>
+<wire x1="-220.98" y1="-99.06" x2="-246.38" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-243.84" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">

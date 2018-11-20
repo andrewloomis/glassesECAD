@@ -183,7 +183,7 @@
 <smd name="4" x="0.75" y="-1.5" dx="1.1" dy="1.5" layer="1" rot="R180"/>
 <wire x1="-2" y1="1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
-<circle x="-2" y="-3" radius="0.5" width="0.5" layer="21"/>
+<circle x="-0.7808" y="-2.7968" radius="0.254" width="0.254" layer="21"/>
 <text x="-1" y="-4.238" size="1.524" layer="21">&gt;NAME</text>
 </package>
 <package name="SOP65P490X110-8" urn="urn:adsk.eagle:footprint:6948351/1" locally_modified="yes">

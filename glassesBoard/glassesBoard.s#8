@@ -5159,6 +5159,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C36" library="thanics-capacitor" deviceset="CL05A105MP5NNNC" device="" value="1uF"/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R50" library="thanics-resistor" deviceset="RC0402JR-0710KL" device="" value="10k"/>
+<part name="U$48" library="supply1" deviceset="+1V8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6204,6 +6206,13 @@ S4 - OFF</text>
 </instance>
 <instance part="GND40" gate="1" x="-391.16" y="-99.06" smashed="yes">
 <attribute name="VALUE" x="-393.7" y="-101.6" size="1.778" layer="96"/>
+</instance>
+<instance part="R50" gate="G$1" x="114.3" y="-5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.8014" y="-8.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="117.602" y="-8.89" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$48" gate="G$1" x="114.3" y="2.54" smashed="yes">
+<attribute name="VALUE" x="111.76" y="0" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -7512,6 +7521,11 @@ S4 - OFF</text>
 <pinref part="U$12" gate="G$1" pin="+1V8"/>
 <wire x1="-15.24" y1="-302.26" x2="-15.24" y2="-304.8" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="R50" gate="G$1" pin="2"/>
+<pinref part="U$48" gate="G$1" pin="+1V8"/>
+<wire x1="114.3" y1="0" x2="114.3" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBATT_IN" class="0">
@@ -9144,6 +9158,8 @@ S4 - OFF</text>
 <pinref part="J6" gate="G$1" pin="6"/>
 <wire x1="99.06" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
 <label x="111.76" y="-17.78" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="R50" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="-17.78" x2="114.3" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COM" class="0">

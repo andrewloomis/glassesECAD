@@ -8376,6 +8376,11 @@ S4 - OFF</text>
 <wire x1="-220.98" y1="-99.06" x2="-246.38" y2="-99.06" width="0.1524" layer="91"/>
 <label x="-243.84" y="-99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U11" gate="G$1" pin="SHTDN#"/>
+<wire x1="0" y1="-58.42" x2="-22.86" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-22.86" y="-58.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$27" class="0">
 <segment>
@@ -8839,13 +8844,6 @@ S4 - OFF</text>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="U7" gate="G$1" pin="VCORE"/>
 <wire x1="-32.004" y1="0" x2="-35.56" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!SHUTDOWN_LVDS" class="0">
-<segment>
-<pinref part="U11" gate="G$1" pin="SHTDN#"/>
-<wire x1="0" y1="-58.42" x2="-22.86" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-22.86" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$39" class="0">

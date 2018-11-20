@@ -7951,6 +7951,11 @@ S4 - OFF</text>
 <wire x1="-515.62" y1="-292.1" x2="-492.76" y2="-292.1" width="0.1524" layer="91"/>
 <label x="-513.08" y="-292.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="7"/>
+<wire x1="81.28" y1="-20.32" x2="66.04" y2="-20.32" width="0.1524" layer="91"/>
+<label x="68.58" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C0_SCL" class="0">
 <segment>
@@ -7979,6 +7984,11 @@ S4 - OFF</text>
 <pinref part="U22" gate="G$1" pin="B0"/>
 <wire x1="-515.62" y1="-193.04" x2="-492.76" y2="-193.04" width="0.1524" layer="91"/>
 <label x="-513.08" y="-193.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="8"/>
+<wire x1="99.06" y1="-20.32" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
+<label x="111.76" y="-20.32" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="PHONE_ON_N" class="0">
@@ -8080,11 +8090,6 @@ S4 - OFF</text>
 <wire x1="-68.58" y1="-43.18" x2="-91.44" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-86.36" y="-43.18" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J6" gate="G$1" pin="8"/>
-<wire x1="99.06" y1="-20.32" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
-<label x="111.76" y="-20.32" size="1.778" layer="95" align="bottom-right"/>
-</segment>
 </net>
 <net name="I2C3_SDA" class="0">
 <segment>
@@ -8098,11 +8103,6 @@ S4 - OFF</text>
 <pinref part="U7" gate="G$1" pin="SDA"/>
 <wire x1="-68.58" y1="-45.72" x2="-91.44" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-86.36" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J6" gate="G$1" pin="7"/>
-<wire x1="81.28" y1="-20.32" x2="66.04" y2="-20.32" width="0.1524" layer="91"/>
-<label x="68.58" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">

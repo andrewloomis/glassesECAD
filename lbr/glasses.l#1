@@ -1098,7 +1098,6 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <smd name="7" x="2.1533" y="0.325" dx="1.5" dy="0.45" layer="1"/>
 <smd name="8" x="2.1533" y="0.975" dx="1.5" dy="0.45" layer="1"/>
 <text x="0" y="2.6336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.1936" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>

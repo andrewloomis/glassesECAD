@@ -186,7 +186,7 @@
 <circle x="-2" y="-3" radius="0.5" width="0.5" layer="21"/>
 <text x="-1" y="-4.238" size="1.524" layer="21">&gt;NAME</text>
 </package>
-<package name="SOP65P490X110-8" urn="urn:adsk.eagle:footprint:6948351/1">
+<package name="SOP65P490X110-8" urn="urn:adsk.eagle:footprint:6948351/1" locally_modified="yes">
 <description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
 &lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
 <circle x="-2.2288" y="1.7486" radius="0.25" width="0" layer="21"/>
@@ -196,20 +196,19 @@
 <wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.12" layer="51"/>
 <wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="51"/>
 <wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.12" layer="51"/>
-<smd name="1" x="-2.1533" y="0.975" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="2" x="-2.1533" y="0.325" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="3" x="-2.1533" y="-0.325" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="4" x="-2.1533" y="-0.975" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="5" x="2.1533" y="-0.975" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="6" x="2.1533" y="-0.325" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="7" x="2.1533" y="0.325" dx="1.5088" dy="0.5391" layer="1"/>
-<smd name="8" x="2.1533" y="0.975" dx="1.5088" dy="0.5391" layer="1"/>
+<smd name="1" x="-2.1533" y="0.975" dx="1.5" dy="0.45" layer="1"/>
+<smd name="2" x="-2.1533" y="0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="3" x="-2.1533" y="-0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="4" x="-2.1533" y="-0.975" dx="1.5" dy="0.45" layer="1"/>
+<smd name="5" x="2.1533" y="-0.975" dx="1.5" dy="0.45" layer="1"/>
+<smd name="6" x="2.1533" y="-0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="7" x="2.1533" y="0.325" dx="1.5" dy="0.45" layer="1"/>
+<smd name="8" x="2.1533" y="0.975" dx="1.5" dy="0.45" layer="1"/>
 <text x="0" y="2.6336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.1936" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOP65P490X110-8" urn="urn:adsk.eagle:package:6948348/1" type="model">
+<package3d name="SOP65P490X110-8" urn="urn:adsk.eagle:package:6948348/1" locally_modified="yes" type="model">
 <description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
 &lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
