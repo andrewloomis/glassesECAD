@@ -4435,6 +4435,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="4" x="2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
 <smd name="3" x="1" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
 </package>
+<package name="5-520315-2">
+<pad name="1" x="-1.27" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="1.27" y="0" drill="0.8" diameter="1.4224"/>
+<wire x1="-4.82" y1="3.45" x2="-4.82" y2="-1.37" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.37" x2="-4.9" y2="-1.37" width="0.127" layer="21"/>
+<wire x1="0" y1="3.61" x2="-4.9" y2="3.61" width="0.127" layer="21"/>
+<wire x1="4.82" y1="3.45" x2="4.82" y2="-1.37" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.37" x2="4.9" y2="-1.37" width="0.127" layer="21"/>
+<wire x1="0" y1="3.61" x2="4.9" y2="3.61" width="0.127" layer="21"/>
+<text x="-4.5" y="4" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DF30FC-30DS-0.4V">
@@ -4583,6 +4594,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="7.62" y1="22.86" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
 <text x="-11.43" y="26.67" size="3.81" layer="95">&gt;NAME</text>
 <text x="-11.43" y="24.13" size="2.032" layer="95">FH26W-39S-0.3SHW</text>
+</symbol>
+<symbol name="5-520315-2">
+<pin name="1" x="-10.16" y="2.54" length="middle"/>
+<pin name="2" x="-10.16" y="0" length="middle"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="8.89" size="3.81" layer="95">&gt;NAME</text>
+<text x="-5.08" y="6.35" size="2.032" layer="95">5-520315-2</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4773,6 +4794,22 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5-520315-2" prefix="J">
+<gates>
+<gate name="G$1" symbol="5-520315-2" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="5-520315-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5202,6 +5239,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND62" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R54" library="thanics-resistor" deviceset="RC0402JR-0710KL" device="" value="10k"/>
+<part name="J8" library="thanics-connector" deviceset="5-520315-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6267,6 +6305,9 @@ S4 - OFF</text>
 <instance part="R54" gate="G$1" x="83.82" y="-114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="82.3214" y="-118.11" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="87.122" y="-118.11" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="J8" gate="G$1" x="109.22" y="-83.82" smashed="yes">
+<attribute name="NAME" x="104.14" y="-74.93" size="3.81" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -7343,6 +7384,12 @@ S4 - OFF</text>
 <wire x1="-15.24" y1="9.144" x2="-15.24" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-2.54" y="10.16"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="1"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="99.06" y1="-81.28" x2="93.98" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-81.28" x2="93.98" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -9391,6 +9438,14 @@ S4 - OFF</text>
 <pinref part="U27" gate="A" pin="D"/>
 <pinref part="R51" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="-99.822" x2="93.98" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="J8" gate="G$1" pin="2"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="-83.82" x2="93.98" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-83.82" x2="93.98" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

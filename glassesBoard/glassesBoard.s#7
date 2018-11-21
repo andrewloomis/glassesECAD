@@ -5071,10 +5071,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$37" library="supply1" deviceset="+1V8" device=""/>
 <part name="U$38" library="supply1" deviceset="+1V8" device=""/>
 <part name="C29" library="thanics-capacitor" deviceset="CL05A105MP5NNNC" device="" value="1uF"/>
-<part name="C30" library="thanics-capacitor" deviceset="CL05A105MP5NNNC" device="" value="1uF"/>
 <part name="C31" library="thanics-capacitor" deviceset="CL05A105MP5NNNC" device="" value="1uF"/>
 <part name="GND61" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND62" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND63" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U22" library="glasses" deviceset="FXMA2104UMX" device=""/>
 <part name="U23" library="glasses" deviceset="NX3020NAK" device=""/>
@@ -5903,11 +5901,6 @@ S4 - OFF</text>
 <attribute name="VALUE" x="-44.958" y="-324.104" size="1.524" layer="95"/>
 <attribute name="RATING" x="-44.958" y="-326.644" size="1.524" layer="95"/>
 </instance>
-<instance part="C30" gate="G$1" x="-55.88" y="-302.26" smashed="yes" rot="R270">
-<attribute name="NAME" x="-55.118" y="-299.974" size="2.032" layer="95"/>
-<attribute name="VALUE" x="-55.118" y="-303.784" size="1.524" layer="95"/>
-<attribute name="RATING" x="-55.118" y="-306.324" size="1.524" layer="95"/>
-</instance>
 <instance part="C31" gate="G$1" x="-71.12" y="-299.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="-70.358" y="-297.434" size="2.032" layer="95"/>
 <attribute name="VALUE" x="-70.358" y="-301.244" size="1.524" layer="95"/>
@@ -5915,9 +5908,6 @@ S4 - OFF</text>
 </instance>
 <instance part="GND61" gate="1" x="-45.72" y="-327.66" smashed="yes">
 <attribute name="VALUE" x="-48.26" y="-330.2" size="1.778" layer="96"/>
-</instance>
-<instance part="GND62" gate="1" x="-55.88" y="-307.34" smashed="yes">
-<attribute name="VALUE" x="-58.42" y="-309.88" size="1.778" layer="96"/>
 </instance>
 <instance part="GND63" gate="1" x="-71.12" y="-304.8" smashed="yes">
 <attribute name="VALUE" x="-73.66" y="-307.34" size="1.778" layer="96"/>
@@ -6976,11 +6966,6 @@ S4 - OFF</text>
 <pinref part="GND63" gate="1" pin="GND"/>
 <pinref part="C31" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-302.26" x2="-71.12" y2="-301.498" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND62" gate="1" pin="GND"/>
-<pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="-304.8" x2="-55.88" y2="-304.038" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U23" gate="A" pin="S"/>
@@ -8377,11 +8362,6 @@ S4 - OFF</text>
 </net>
 <net name="DSI_EN" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="GPIO118"/>
-<wire x1="-160.02" y1="-218.44" x2="-132.08" y2="-218.44" width="0.1524" layer="91"/>
-<label x="-149.86" y="-218.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="EN"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="-50.8" x2="-86.36" y2="-50.8" width="0.1524" layer="91"/>
@@ -8390,6 +8370,11 @@ S4 - OFF</text>
 <wire x1="-86.36" y1="-54.356" x2="-86.36" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-86.36" y="-50.8"/>
 <label x="-83.82" y="-50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO8"/>
+<wire x1="-220.98" y1="-99.06" x2="-246.38" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-243.84" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -8440,13 +8425,8 @@ S4 - OFF</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>
 <wire x1="-81.28" y1="-309.88" x2="-60.96" y2="-309.88" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="-309.88" x2="-60.96" y2="-297.18" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="-309.88" x2="-60.96" y2="-294.64" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="+1V5"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="-297.18" x2="-60.96" y2="-294.64" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-298.196" x2="-55.88" y2="-297.18" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-297.18" x2="-60.96" y2="-297.18" width="0.1524" layer="91"/>
-<junction x="-60.96" y="-297.18"/>
 </segment>
 <segment>
 <pinref part="U19" gate="G$1" pin="VOUT"/>
