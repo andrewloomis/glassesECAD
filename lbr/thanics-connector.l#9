@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -480,6 +480,16 @@
 <smd name="1" x="-2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
 <smd name="4" x="2" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
 <smd name="3" x="1" y="0" dx="0.7" dy="8" layer="1" rot="R180"/>
+</package>
+<package name="5-520315-2">
+<pad name="P$1" x="-1.27" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$2" x="1.27" y="0" drill="0.8" diameter="1.4224"/>
+<wire x1="-4.82" y1="3.45" x2="-4.82" y2="-1.37" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.37" x2="-4.9" y2="-1.37" width="0.127" layer="21"/>
+<wire x1="0" y1="3.61" x2="-4.9" y2="3.61" width="0.127" layer="21"/>
+<wire x1="4.82" y1="3.45" x2="4.82" y2="-1.37" width="0.127" layer="22"/>
+<wire x1="0" y1="-1.37" x2="4.9" y2="-1.37" width="0.127" layer="22"/>
+<wire x1="0" y1="3.61" x2="4.9" y2="3.61" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -963,6 +973,17 @@
 </gates>
 <devices>
 <device name="" package="0787324001">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CONTACTS" package="0787324001-CONTACTS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

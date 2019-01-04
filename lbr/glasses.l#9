@@ -1073,8 +1073,7 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <wire x1="0.65" y1="0.45" x2="0.65" y2="-0.45" width="0.12" layer="51"/>
 <smd name="C" x="-0.7846" y="0" dx="0.86" dy="0.46" layer="1"/>
 <smd name="A" x="0.7846" y="0" dx="0.86" dy="0.46" layer="1"/>
-<text x="0" y="1.179" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.179" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="0.671" size="0.762" layer="25" align="bottom-center">&gt;NAME</text>
 <wire x1="-1.905" y1="0" x2="-1.397" y2="-0.127" width="0.127" layer="21"/>
 <wire x1="-1.397" y1="0" x2="-1.905" y2="-0.127" width="0.127" layer="21"/>
 <wire x1="-1.778" y1="0.127" x2="-1.524" y2="-0.254" width="0.127" layer="21"/>
